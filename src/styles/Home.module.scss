@@ -1,0 +1,91 @@
+@import './Variables.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+.home__title {
+  display: flex;
+  align-items: center;
+}
+.heroTitle__container {
+  max-width: 35svw;
+  margin-inline: auto;
+  .heroTitle {
+    font-size: calc($index * 2.4);
+    font-weight: 500;
+  }
+  h4 {
+    font-weight: 500;
+    color: $text-color;
+  }
+}
+.imageTitle {
+  width: 40svw;
+  border-radius: $index;
+  box-shadow: 0 8px 16px rgba(black, .5);
+}
+.categories {
+  display: flex;
+  justify-content: space-between;
+}
+.categories__button {
+  padding: calc($index * .5) $index;
+  border-radius: calc($index * 2);
+  box-shadow: 0 5px 10px rgba(black, .25);
+  color: $text-color;
+  font-family: 'Santello';
+  font-size: calc($index * 1.2);
+  font-weight: 500;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: $transition ease;
+  &:hover {
+    box-shadow: 0 8px 16px rgba($accent-color, .5);
+    transform: translateY(-6%);
+  }
+  &:active {
+    border-color: $orange;
+  }
+}
+.products {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: calc($index * 4);
+  place-items: center;
+}
+.advantages {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  h1 {
+    text-align: center;
+  }
+}
+.advantages__container {
+  display: flex;
+  justify-content: space-around;
+  .advantages__container__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    article {
+      max-width: 24svw;
+      h2 {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+.productPage {
+  width: 100svw;
+  height: 100svh;
+  background-color: blueviolet;
+}
+.categories {
+}

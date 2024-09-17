@@ -1,0 +1,17 @@
+@import './Variables.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: calc($index * 4);
+}
+.hero {
+  text-align: center;
+}
+.container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: calc($index * 4);
+  place-items: center;
+}

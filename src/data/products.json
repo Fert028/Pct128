@@ -1,0 +1,107 @@
+{
+  "currentItems": [],
+  "categories": [
+    {
+      "key": "medicine",
+      "name": "Медицина"
+    },
+    {
+      "key": "foodIndustry",
+      "name": "Пищевая промышленность"
+    },
+    {
+      "key": "veterinary",
+      "name": "Ветеринария"
+    },
+    {
+      "key": "birdProcessing",
+      "name": "Птицепереработка"
+    },
+    {
+      "key": "life",
+      "name": "Быт"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "name": "ПАЛ-1",
+      "img": "img/product-image/Mini_img/ПАЛ-1(mini-img).jpg",
+      "category": [
+        "medicine",
+        "foodIndustry",
+        "veterinary",
+        "birdProcessing",
+        "life"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "ЭкоЧас",
+      "img": "img/product-image/Mini_img/Экочас(mini-img).jpg",
+      "category": [
+        "medicine",
+        "life"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "ЭкоЧас-Актив",
+      "img": "img/product-image/Mini_img/ЭкоЧас-Актив(mini-img).jpg",
+      "category": [
+        "medicine",
+        "life"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Ульянка",
+      "img": "img/product-image/Mini_img/Ульянка(mini-img).jpg",
+      "category": [
+        "foodIndustry",
+        "veterinary",
+        "life"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Сальмодез",
+      "img": "img/product-image/Mini_img/Сальмодез(mini-img).jpg",
+      "category": [
+        "birdProcessing"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Палоцид",
+      "img": "img/product-image/Mini_img/Палоцид (mini-img).jpg",
+      "category": [
+        "veterinary"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "НЕО-К",
+      "img": "img/product-image/Mini_img/НЕО-К(mini_img).jpg",
+      "category": [
+        "foodIndustry",
+        "life"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "НЕО-Щ",
+      "img": "img/product-image/Mini_img/НЕО-Щ(mini-img).jpg",
+      "category": [
+        "foodIndustry",
+        "life"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Чистые Диски",
+      "img": "img/product-image/Mini_img/ЧистыеДиски(mini-img).jpg",
+      "category": []
+    }
+  ]
+}
