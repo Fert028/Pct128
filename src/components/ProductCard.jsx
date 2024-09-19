@@ -15,7 +15,7 @@ export default function ProductCard(props) {
     <NavLink to={`/product/${product.id}`} className={style.card} title={`Перейти к ${product.name}`}> 
       <img src={product.img} />
       <div className={style.card__title}>
-        <h3>{product.name}</h3>
+        <h4>{product.name}</h4>
       </div>
     </NavLink>
   )

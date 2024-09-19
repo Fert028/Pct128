@@ -2,7 +2,25 @@
 @import './Variables.scss';
 @font-face {
   font-family: 'Santello';
-  src: url('../fonts/santello/SANTELLO.ttf');
+  src: url('../assets/fonts/santello/SANTELLO.ttf');
+}
+@font-face {
+	font-family: 'FuturaBookC';
+	src: url('../assets/fonts/futura/futurabookc.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futurabookc.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../assets/fonts/futura/futurabookc.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../assets/fonts/futura/futurabookc.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../assets/fonts/futura/futurabookc.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../assets/fonts/futura/futurabookc.svg#futurabookc') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'FuturaBookC-Italic';
+	src: url('../assets/fonts/futura/futurabookc-italic.eot'); /* IE 9 Compatibility Mode */
+	src: url('../assets/fonts/futura/futurabookc-italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../assets/fonts/futura/futurabookc-italic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../assets/fonts/futura/futurabookc-italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../assets/fonts/futura/futurabookc-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../assets/fonts/futura/futurabookc-italic.svg#futurabookc-italic') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 * {
   padding: 0;
@@ -13,11 +31,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  width: $main-width;
+  width: $full-width;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Santello', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Santello', 'Roboto', 'Ubuntu', 'FuturaBookC', 'FuturaBookC-Italic', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: calc($index * .8);
@@ -42,7 +58,6 @@ a {
   text-transform: none;
   color: $text-color;
   font-family: 'Ubuntu';
-  font-weight: 300;
   transition: hover $transition;
 }
 button {
@@ -61,7 +76,7 @@ p {
   font-weight: 400;
 }
 .header, .footer {
-  width: $main-width;
+  width: $full-width;
   padding-inline: calc($index * 2);
 }
 .header {
@@ -70,30 +85,43 @@ p {
 .footer {
   margin-block: 60px 30px;
 }
-.pagesMenu {
+.header__container, .footer__container {
   padding-inline: $index;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.pagesMenu {
+  background-color: rgba($text-color, .8);
+  padding: calc($index * .6);
+  border-radius: calc($index * 2);
+  box-shadow: inset 0 0 8px rgba(black, .25);
   nav ul {
     display: flex;
-    align-items: center;
-    gap: calc($index * 2);
+    gap: calc($index * 1.28);
     font-weight: 500;
     font-size: calc($index * .8);
     letter-spacing: 1px;
     li p {
-      padding: calc($index * .3);
-      border-bottom: 1px solid transparent;
+      color: white;
+      font-family: 'Ubuntu';
+      font-weight: 500;
+      padding: calc($index * .4) calc($index * .8);
+      border-radius: calc($index * 2);
+      border: 1px solid transparent;
       transition: $transition;
+      &:hover {
+        border-color: white;
+      }
     }
     .active {
       user-select: none;
       pointer-events: none;
       cursor: default;
       p {
-        color: $accent-color;
-        border-color: $accent-color;
+        color: $text-color;
+        background-color: $main-color;
+        box-shadow: 0 5px 10px rgba(black, .25);
       }
     }
   } 
@@ -102,7 +130,7 @@ p {
   width: calc($index * 3.4);
 }
 main {
-  width: $main-width;
+  width: $full-width;
   padding-inline: calc($index * 3);
 }
 section {

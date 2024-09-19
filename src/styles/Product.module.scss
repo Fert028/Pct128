@@ -1,0 +1,19 @@
+@import './Variables.scss';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: calc($index * 4);
+}
+.contentProduct {
+
+}
+.documents {
+  
+}
+.imageProduct {
+  aspect-ratio: 1;
+  width: calc($index * 20);
+  object-fit: cover;
+  border-radius: $index;
+}

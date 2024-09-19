@@ -26,31 +26,44 @@
   border-radius: $index;
   box-shadow: 0 8px 16px rgba(black, .5);
 }
+.sectionProducts {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  background-color: $titan-color;
+  padding: calc($index * 2);
+  border-radius: calc($index * 2);
+  box-shadow: inset 0 0 10px rgba(black, .25);
+  h1 {
+    text-align: center;
+    color: white;
+    font-size: calc($index * 1.5);
+    text-shadow: 0 4px 8px rgba(black, .25);
+  }
+}
 .categories {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid white;
+  padding-bottom: $index;
 }
 .categories__button {
   padding: calc($index * .5) $index;
   border-radius: calc($index * 2);
-  box-shadow: 0 5px 10px rgba(black, .25);
-  color: $text-color;
-  font-family: 'Santello';
-  font-size: calc($index * 1.2);
+  color: white;
+  font-size: calc($index * 1);
   font-weight: 500;
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   transition: $transition ease;
   &:hover {
-    box-shadow: 0 8px 16px rgba($accent-color, .5);
-    transform: translateY(-6%);
+    background-color: $main-color;
+    color: $text-color;
   }
   &:active {
-    border-color: $orange;
+    color: $accent-color;
+    border-color: $accent-color;
   }
 }
+.activeBtn {}
 .products {
   position: relative;
   display: grid;
@@ -82,10 +95,38 @@
     }
   }
 }
-.productPage {
-  width: 100svw;
-  height: 100svh;
-  background-color: blueviolet;
-}
-.categories {
+.partner {
+  background-color: $titan-color;
+  border-radius: calc($index * 2);
+  box-shadow: inset 0 0 10px rgba(black, .25);
+  padding: calc(($index * 2));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  h1 {
+    color: white;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: calc($index * 2);
+    li {
+      max-width: 15svw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      a {
+        color: $yellow-color;
+        transition: $transition;
+        &:hover {
+          color: $accent-color;
+        }
+      }
+      img {
+        width: 28%;
+      }
+    }
+  }
 }

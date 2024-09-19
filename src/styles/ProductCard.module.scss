@@ -1,8 +1,9 @@
 @import './Variables.scss';
 
 .card {
-  width: 18svw;
+  width: calc($index * 13);
   border-radius: $index;
+  background-color: $main-color;
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(black, .25);
   cursor: pointer;
@@ -15,16 +16,10 @@
     transition: inherit;
   }
   &:hover {
-    box-shadow: 0 8px 16px rgba($accent-color, .5);
     transform: translateY(-5%);
   }
 }
 .card__title {
-  padding: .5rem;
+  padding: .6rem 1rem;
   margin-top: .5rem;
-}
-.product img {
-  width: 28svw;
-  aspect-ratio: 1;
-  object-fit: cover;
 }

@@ -7,9 +7,11 @@ export default function Catalog() {
     <div className={style.wrapper}>
       <h1 className={style.hero}>Каталог</h1>
       <div className={style.container}>
-        {data.items.map(el => (
-            <ProductCard key={el.id} item={el} nameProduct={el.name} img={el.img} id={el.id} />
-          ))}
+        <div className={style.products__container}>
+          {data.items.map(el => (
+              <ProductCard key={el.id} item={el} nameProduct={el.name} img={el.img} id={el.id} />
+            ))}
+        </div>
       </div>
     </div>
   );

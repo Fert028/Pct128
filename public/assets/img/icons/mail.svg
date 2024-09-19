@@ -1,0 +1,21 @@
+<svg width="36.000000" height="36.000000" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip93_1172">
+			<rect id="Почта" width="36.000000" height="36.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Почта" width="36.000000" height="36.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip93_1172)">
+		<path id="path" d="M3 29.25L33 29.25L33 18L33 6.75L18 6.75L3 6.75L3 18L3 29.25Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M33 29.25L33 18L33 6.75L18 6.75L3 6.75L3 18L3 29.25L33 29.25Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+		<path id="path" d="M2.57788 7.34595L2.55005 7.3501C2.21411 7.0979 2.14795 6.63599 2.3999 6.30005C2.6521 5.96411 3.11401 5.89795 3.44995 6.1499L3.4541 6.17798L2.57788 7.34595ZM32.5459 6.17798L32.55 6.1499C32.886 5.89795 33.3479 5.96411 33.6001 6.30005C33.8521 6.63599 33.7859 7.0979 33.45 7.3501L33.4221 7.34595L32.5459 6.17798Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M3 6.75L18 18L33 6.75" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="path" d="M17.98 6.02002L18 6C18.4199 6 18.75 6.33008 18.75 6.75C18.75 7.16992 18.4199 7.5 18 7.5L17.98 7.47998L17.98 6.02002ZM3.72998 17.98L3.75 18C3.75 18.4199 3.41992 18.75 3 18.75C2.58008 18.75 2.25 18.4199 2.25 18L2.27002 17.98L3.72998 17.98Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M18 6.75L3 6.75L3 18" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="path" d="M33.73 17.98L33.75 18C33.75 18.4199 33.4199 18.75 33 18.75C32.5801 18.75 32.25 18.4199 32.25 18L32.27 17.98L33.73 17.98ZM18.02 7.47998L18 7.5C17.5801 7.5 17.25 7.16992 17.25 6.75C17.25 6.33008 17.5801 6 18 6L18.02 6.02002L18.02 7.47998Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M33 18L33 6.75L18 6.75" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+	</g>
+</svg>
