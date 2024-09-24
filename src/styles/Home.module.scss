@@ -3,7 +3,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 120px;
 }
 .home__title {
   display: flex;
@@ -15,6 +14,10 @@
   .heroTitle {
     font-size: calc($index * 2.4);
     font-weight: 500;
+    span {
+      color: $primary-color;
+      font-weight: 600;
+    }
   }
   h4 {
     font-weight: 500;
@@ -26,51 +29,16 @@
   border-radius: $index;
   box-shadow: 0 8px 16px rgba(black, .5);
 }
-.sectionProducts {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  background-color: $titan-color;
-  padding: calc($index * 2);
-  border-radius: calc($index * 2);
+.home__products {
   box-shadow: inset 0 0 10px rgba(black, .25);
-  h1 {
-    text-align: center;
-    color: white;
-    font-size: calc($index * 1.5);
-    text-shadow: 0 4px 8px rgba(black, .25);
-  }
-}
-.categories {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid white;
-  padding-bottom: $index;
-}
-.categories__button {
-  padding: calc($index * .5) $index;
   border-radius: calc($index * 2);
-  color: white;
-  font-size: calc($index * 1);
-  font-weight: 500;
-  transition: $transition ease;
-  &:hover {
-    background-color: $main-color;
-    color: $text-color;
-  }
-  &:active {
-    color: $accent-color;
-    border-color: $accent-color;
-  }
+  padding: calc($index * 2);
 }
-.activeBtn {}
-.products {
-  position: relative;
+.home__productsItems {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: calc($index * 4);
-  place-items: center;
+  justify-items: center;
 }
 .advantages {
   display: flex;
@@ -95,11 +63,23 @@
     }
   }
 }
+.logo__container {
+  display: flex;
+  align-items: center;
+  a {
+    width: min-content;
+    height: min-content;
+  }
+  img {
+    width: calc($index * 8);
+  }
+}
 .partner {
-  background-color: $titan-color;
+  padding: calc($index * 2);
+  margin-inline: calc($index * 4);
+  background-color: $accent-color;
   border-radius: calc($index * 2);
-  box-shadow: inset 0 0 10px rgba(black, .25);
-  padding: calc(($index * 2));
+  box-shadow: 0 10px 20px rgba(black, .5);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,10 +98,10 @@
       align-items: center;
       gap: 1.5rem;
       a {
-        color: $yellow-color;
+        color: $yellow;
         transition: $transition;
         &:hover {
-          color: $accent-color;
+          color: $primary-color;
         }
       }
       img {

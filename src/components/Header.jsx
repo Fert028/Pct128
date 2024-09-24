@@ -6,15 +6,17 @@ export default function Header() {
     <header className='header'>
       <div className="header__wrapper">
         <div className='header__container'>
-          <img src={logo} alt="ПХТ" className='logoPct' />
+          <a href="/">
+            <img src={logo} alt="ПХТ" className='logoPct' />
+          </a>
           <div className='pagesMenu'>
             <nav>
               <ul>
-                <li><NavLink to='/'><p>Главная</p></NavLink></li>
-                <li><NavLink to='/about'><p>О нас</p></NavLink></li>
-                <li><NavLink to='/catalog'><p>Каталог</p></NavLink></li>
-                <li><NavLink to='/contacts'><p>Контакты</p></NavLink></li>
-                <li><NavLink to='/documents'><p>Документы</p></NavLink></li>
+                <li><NavLink to='/'><button>Главная</button></NavLink></li>
+                <li><NavLink to='/about'><button>О нас</button></NavLink></li>
+                <li><NavLink to='/catalog'><button>Каталог</button></NavLink></li>
+                <li><NavLink to='/contacts'><button>Контакты</button></NavLink></li>
+                <li><NavLink to='/documents'><button>Документы</button></NavLink></li>
               </ul>
             </nav>
           </div>

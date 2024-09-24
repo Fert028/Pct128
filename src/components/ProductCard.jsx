@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import style from '../styles/ProductCard.module.scss';
 import data from '../data/products.json';
 import { useState, useEffect } from 'react';
+import classNames from 'classnames';
 
 export default function ProductCard(props) {
   const [product, setProduct] = useState({});
@@ -9,13 +10,18 @@ export default function ProductCard(props) {
   useEffect(() => {
     const res = data.items.find((item) => item.id === parseInt(props.id));
     setProduct(res);
-  },[])
+  },[product])
 
   return (
     <NavLink to={`/product/${product.id}`} className={style.card} title={`Перейти к ${product.name}`}> 
-      <img src={product.img} />
-      <div className={style.card__title}>
-        <h4>{product.name}</h4>
+      <div className={style.card__container}>
+        <div className={style.img__container}>
+          <img src={product.img} />
+        </div>
+        <div className={style.product__title}>
+          <h4>{product.name}</h4>
+          <p className={classNames(style.goText, 'text')}>Перейти к товару</p>
+        </div>
       </div>
     </NavLink>
   )

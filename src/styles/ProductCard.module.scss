@@ -1,25 +1,48 @@
 @import './Variables.scss';
 
+$card-width: calc($index * 13); 
+
 .card {
-  width: calc($index * 13);
+  display: block;
+  position: relative;
+  width: $card-width;
+  aspect-ratio: 9 / 10;
   border-radius: $index;
-  background-color: $main-color;
-  overflow: hidden;
   box-shadow: 0 5px 10px rgba(black, .25);
   cursor: pointer;
   transition: $transition linear;
-  img {
-    width: inherit;
-    border-radius: inherit;
-    aspect-ratio: 1;
-    object-fit: cover;
-    transition: inherit;
+  .goText {
+    opacity: 0;
+    transition: $transition linear;
   }
   &:hover {
     transform: translateY(-5%);
+    box-shadow: 0 5px 15px rgba($primary-color, .9);
+    .goText {
+      opacity: 1;
+    }
   }
 }
-.card__title {
+.card__container {
+  width: inherit;
+  height: 100%;
+  border-radius: inherit;
+  background-color: $basic-color;
+  display: grid;
+}
+.img__container {
+  overflow: hidden;
+  width: min-content;
+  height: min-content;
+  img {
+    width: $card-width;
+    border-radius: $index;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+}
+.product__title {
   padding: .6rem 1rem;
-  margin-top: .5rem;
+  display: grid;
+  justify-content: space-between;
 }

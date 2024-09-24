@@ -1,54 +1,45 @@
-import { useEffect, useState } from 'react';
 import style from '../../styles/Home.module.scss';
 import data from '../../data/products.json';
 
 import imageTitle from '../../assets/img/images/him.jpg';
+import logo from '../../assets/img/logo/logoПХТ128.svg';
 import altairLogo from '../../assets/img/logo/altair_pb--shadow.png';
 import iconGlobe from '../../assets/img/icons/globe.svg'
 import iconPhone from '../../assets/img/icons/phone.svg'
 import iconMail from '../../assets/img/icons/mail.svg'
 import iconLocation from '../../assets/img/icons/location.svg'
-
 import ProductCard from '../../components/ProductCard';
-import Categories from './Categories';
 
 export default function Home() {
-  data.currentItems = data.items;
-
-  const [items, setItems] = useState(data.currentItems);
-  const [category, setCategory] = useState('medicine');
-  const [categoryText, setCategoryText] = useState('Медицина');
-  
-  useEffect(() => {
-    const filteredItems = [...data.currentItems].filter((item) => item.category?.find(i => i === category));
-    setItems(filteredItems)
-    const categoryTitle = data.categories.find((item) => item.key === category);
-    setCategoryText(categoryTitle.name)
-  }, [category, categoryText])
-
   return (
     <div className={style.container}>
+
       <section>
         <div className={style.home__title}>
-          <div className={style.heroTitle__container}>
-            <h1 className={style.heroTitle}>Прогрессивные <br /> Химические <br /> Технологии</h1>
+          <article className={style.heroTitle__container}>
+            <h1 className={style.heroTitle}>
+              <span>П</span>рогрессивные <br /> <span>Х</span>имические <br /> <span>Т</span>ехнологии
+            </h1>
             <br />
             <p>"ПХТ" - научно-производственное предприятие, осуществляющее полный цикл выпускаемой продукции.</p>
-          </div>
+          </article>
           <img src={imageTitle} alt="him" className={style.imageTitle} />
         </div>
       </section>
+
       <section>
-        <div className={style.sectionProducts}>
-          <Categories chooseCategory={setCategory} />
-          <h1>{categoryText}</h1>
-          <div className={style.products}>
-            {items.map(el => (
-              <ProductCard key={el.id} item={el} id={el.id} />
-            ))}
+        <div className={style.home__products}>
+          <div className={style.home__products__title}>
+
+          </div>
+          <div className={style.home__productsItems}>
+            <ProductCard id={1} />
+            <ProductCard id={8} />
+            <ProductCard id={15} />
           </div>
         </div>
       </section>
+
       <section>
         <div className={style.advantages}>
           <h1>Преимущества</h1>
@@ -63,6 +54,11 @@ export default function Home() {
                 <p>Экспозиция препарата, нанесенного на обрабатываемые поверхности, в два раза быстрее, по сравнению с аналогичными препаратами на основе АДМБАХ</p>
               </article>
             </div>
+            <div className={style.logo__container}>
+              <a href="/">
+                <img src={logo} alt="logo" className={style.logo__advantages} />
+              </a>
+            </div>
             <div className={style.advantages__container__item}>
               <article>
                 <h2>Улучшенные моющие свойства</h2>
@@ -76,6 +72,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section>
         <div className={style.partner}>
           <h1>Наш партнер</h1>
@@ -103,6 +100,7 @@ export default function Home() {
           </ul>
         </div>
       </section>
+      
     </div>  
   );
 }

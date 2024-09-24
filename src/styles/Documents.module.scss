@@ -1,1 +1,57 @@
 @import './Variables.scss';
+
+.wrapper {
+  padding: calc($index * 3);
+  h1, h2 {
+    // font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+}
+.container {
+  margin-top: 100px;
+  padding-inline: calc($index * 3);
+  display: grid;
+  row-gap: 100px;
+}
+.sectionDocs {
+  h2 {
+    margin-bottom: 60px;
+  }
+}
+.patentsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+.awardsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+.imgDocs {
+  width: calc($index * 12);
+}
+.listing {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  .docsLinks {
+    display: flex;
+    gap: 10px;
+    a {
+      transition: $transition;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.downloadIcon {
+  width: 20px;
+  aspect-ratio: 1;
+}
+.sectionDocs {
+  padding: calc($index * 2);
+  border-radius: calc($index * 2);
+  box-shadow: inset 0 0 10px rgba(black, .25);
+}
