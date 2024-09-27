@@ -1,9 +1,17 @@
 @import './Variables.scss';
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: calc($index * 3);
+  padding: calc($index * 3);
+}
 .container {
   display: flex;
   justify-content: space-between;
-  padding: calc($index * 3) calc($index * 4);
+  border-bottom: 1px solid $titan-color;
+  padding: $index;
+  padding-bottom: calc($index * 3);
 }
 .contentProduct {
   display: flex;
@@ -15,28 +23,40 @@
   justify-items: center;
   gap: $index;
 } 
-.orderButton__wrapper {
+.orderButton {
   border-radius: calc($index * 2);
-  width: min-content;
-  height: min-content;
-  .orderButton {
+  padding-inline: 0;
+  .orderButton__link {
     color: white;
     font-size: calc($index * .9);
     background-color: $primary-color;
-    border-radius: inherit;
+    border-radius: calc($index * 2);
     border: 1px solid $primary-color;
-    padding-inline: calc($index * 5);
+    padding: calc($index * .5) calc($index * 5);
     box-shadow: 0 5px 10px rgba(black, .25);
-    transition: $transition ease-in;
+    transition: $transition linear;
     &:hover {
       background-color: transparent;
       color: $primary-color;
       box-shadow: none;
     }
     &:active {
-      scale: .95;
+      color: $yellow;
+      border-color: $yellow;
     }
   }
+  &:disabled {
+    pointer-events: none;
+    opacity: .8;
+    .orderButton__link {
+      background-color: $titan-color;
+      border-color: $text-color;
+      color: $text-color;
+    }
+  }
+}
+.textNotOrder {
+  color: $red;
 }
 .docsLi {
   display: flex;

@@ -64,50 +64,62 @@
     ],
     "instructions": [
       {
+        "id": 1,
         "name": "ПАЛ-1 инструкция 8.12 ЛПУ",
         "documentLink": "assets/products/documents/ПАЛ-1/instructions/ПАЛ-1 инструкция 8.12 ЛПУ.pdf"
       },
       {
+        "id": 2,
         "name": "ПАЛ-1 инструкция ЖКХ 3.07",
         "documentLink": "assets/products/documents/ПАЛ-1/instructions/ПАЛ-1 инструкция ЖКХ  3.07.pdf"
       },
       {
+        "id": 3,
         "name": "ПАЛ-1 инструкция для птицеперерабатывающей промышленности",
         "documentLink": "assets/products/documents/ПАЛ-1/instructions/ПАЛ-1 для птицеперерабатывающей промышленности.pdf"
       },
       {
+        "id": 4,
         "name": "ПАЛ-1 инструкция для объектов ветеренарного надзора",
         "documentLink": "assets/products/documents/ПАЛ-1/instructions/ПАЛ-1 инструкция для объектов ветеренарного надзора.PDF"
       },
       {
+        "id": 5,
         "name": "ЭкоЧас инструкция",
         "documentLink": "assets/products/documents/ЭкоЧас/instructions/ЭкоЧас инструкция.pdf"
       },
       {
+        "id": 6,
         "name": "ЭкоЧас-Актив инструкция",
         "documentLink": "assets/products/documents/ЭкоЧас-Актив/instructions/ЭкоЧас-Актив инструкция.pdf"
       },
       {
+        "id": 7,
         "name": "Ульянка инструкция",
         "documentLink": "assets/products/documents/Ульянка/instructions/Ульянка инструкция.docx"
       },
       {
+        "id": 8,
         "name": "Сальмодез инструкция для прицеперерабатывающей промышленности",
         "documentLink": "assets/products/documents/Сальмодез/instructions/Сальмодез инструкция птицепереработка.pdf"
       },
       {
+        "id": 9,
         "name": "ПАЛОЦИД инструкция",
         "documentLink": "assets/products/documents/Палоцид/instructions/ПАЛОЦИД инструкция.docx"
       },
       {
+        "id": 10,
         "name": "НЕО-к инструкция",
         "documentLink": "assets/products/documents/НЕО-К/instructions/НЕО-к инструкция.pdf"
       },
       {
+        "id": 11,
         "name": "НЕО-Щ инструкция",
         "documentLink": "assets/products/documents/НЕО-Щ/instructions/НЕО-Щ инструкция.pdf"
       },
       {
+        "id": 12,
         "name": "Антисептик ПАЛ-1 0.3 инструкция",
         "documentLink": "assets/products/documents/Антисептик ПАЛ-1 0.3/instructions/Антисептик ПАЛ-1 инструкция.docx"
       }
@@ -157,26 +169,31 @@
     {
       "id": 1,
       "name": "ПАЛ-1 для ЛПУ",
-      "title": "assets/products/documents/ПАЛ-1/text.txt",
+      "title": null,
       "img": "assets/products/images/ПАЛ-1.jpg",
+      "price": 1600,
       "category": [
         "medicine",
         "life"
       ],
       "documents": [
         {
+          "id": 1,
           "name": "ПАЛ-1 инструкция 8.12 ЛПУ",
           "documentLink": "assets/products/documents/ПАЛ-1/instructions/ПАЛ-1 инструкция 8.12 ЛПУ.pdf"
         },
         {
+          "id": 2,
           "name": "ПАЛ-1 декларация о соответствии",
           "documentLink": "assets/products/documents/ПАЛ-1/declarations/ПАЛ-1 декларация о соответствии.jpg"
         },
         {
+          "id": 3,
           "name": "ПАЛ-1 краткая памятка по приминению",
           "documentLink": "assets/products/documents/ПАЛ-1/descriptions/ПАЛ-1 краткая памятка по приминению.pdf"
         },
         {
+          "id": 4,
           "name": "ПАЛ-1 свидетельство",
           "documentLink": "assets/products/documents/ПАЛ-1/testimonies/ПАЛ 1 свидетельство.jpg"
         }
@@ -186,8 +203,9 @@
     {
       "id": 2,
       "name": "ПАЛ-1 для ЖКХ",
-      "title": "",
+      "title": null,
       "img": "assets/products/images/ПАЛ-1.jpg",
+      "price": 1600,
       "category": [
         "medicine",
         "foodIndustry",
@@ -195,18 +213,22 @@
       ],
       "documents": [
         {
+          "id": 1,
           "name": "ПАЛ-1 инструкция ЖКХ 3.07",
           "documentLink": "assets/products/documents/ПАЛ-1/instructions/ПАЛ-1 инструкция ЖКХ  3.07.pdf"
         },
         {
+          "id": 2,
           "name": "ПАЛ-1 декларация о соответствии",
           "documentLink": "assets/products/documents/ПАЛ-1/declarations/ПАЛ-1 декларация о соответствии.jpg"
         },
         {
+          "id": 3,
           "name": "ПАЛ-1 краткая памятка по приминению",
           "documentLink": "assets/products/documents/ПАЛ-1/descriptions/ПАЛ-1 краткая памятка по приминению.pdf"
         },
         {
+          "id": 4,
           "name": "ПАЛ-1 свидетельство",
           "documentLink": "assets/products/documents/ПАЛ-1/testimonies/ПАЛ 1 свидетельство.jpg"
         }
@@ -216,26 +238,31 @@
     {
       "id": 3,
       "name": "ПАЛ-1 для птицепереработки",
-      "title": "",
+      "title": null,
       "img": "assets/products/images/ПАЛ-1.jpg",
+      "price": 1600,
       "category": [
         "birdProcessing",
         "life"
       ],
       "documents": [
         {
+          "id": 1,
           "name": "ПАЛ-1 инструкция для птицеперерабатывающей промышленности",
           "documentLink": "assets/products/documents/ПАЛ-1/instructions/ПАЛ-1 для птицеперерабатывающей промышленности.pdf"
         },
         {
+          "id": 2,
           "name": "ПАЛ-1 декларация о соответствии",
           "documentLink": "assets/products/documents/ПАЛ-1/declarations/ПАЛ-1 декларация о соответствии.jpg"
         },
         {
+          "id": 3,
           "name": "ПАЛ-1 краткая памятка по приминению",
           "documentLink": "assets/products/documents/ПАЛ-1/descriptions/ПАЛ-1 краткая памятка по приминению.pdf"
         },
         {
+          "id": 4,
           "name": "ПАЛ-1 свидетельство",
           "documentLink": "assets/products/documents/ПАЛ-1/testimonies/ПАЛ 1 свидетельство.jpg"
         }
@@ -245,26 +272,31 @@
     {
       "id": 4,
       "name": "ПАЛ-1 для ветеринарии",
-      "title": "",
+      "title": null,
       "img": "assets/products/images/ПАЛ-1.jpg",
+      "price": 1600,
       "category": [
         "veterinary",
         "life"
       ],
       "documents": [
         {
+          "id": 1,
           "name": "ПАЛ-1 инструкция для объектов ветеренарного надзора",
           "documentLink": "assets/products/documents/ПАЛ-1/instructions/ПАЛ-1 инструкция для объектов ветеренарного надзора.PDF"
         },
         {
+          "id": 2,
           "name": "ПАЛ-1 декларация о соответствии",
           "documentLink": "assets/products/documents/ПАЛ-1/declarations/ПАЛ-1 декларация о соответствии.jpg"
         },
         {
+          "id": 3,
           "name": "ПАЛ-1 краткая памятка по приминению",
           "documentLink": "assets/products/documents/ПАЛ-1/descriptions/ПАЛ-1 краткая памятка по приминению.pdf"
         },
         {
+          "id": 4,
           "name": "ПАЛ-1 свидетельство",
           "documentLink": "assets/products/documents/ПАЛ-1/testimonies/ПАЛ 1 свидетельство.jpg"
         }
@@ -274,116 +306,135 @@
     {
       "id": 5,
       "name": "ЭкоЧас",
-      "title": "",
+      "title": null,
       "img": "assets/products/images/Экочас.jpg",
+      "price": 1600,
       "category": [
         "medicine",
         "life"
       ],
       "documents": [
         {
+          "id": 1,
           "name": "ЭкоЧас инструкция",
           "documentLink": "assets/products/documents/ЭкоЧас/instructions/ЭкоЧас инструкция.pdf"
         },
         {
+          "id": 2,
           "name": "ЭкоЧас декларация о соответствии",
           "documentLink": "src/assets/products/documents/ЭкоЧас/declarations/ЭкоЧас декларация.pdf"
         },
         {
+          "id": 3,
           "name": "ЭкоЧас краткая памятка по приминению",
           "documentLink": "assets/products/documents/ЭкоЧас/description/ЭкоЧас краткая памятка по применению.pdf"
         },
         {
+          "id": 4,
           "name": "ЭкоЧас свидетельство",
           "documentLink": "assets/products/documents/ЭкоЧас/testimonies/ЭкоЧас свидетельство.jpg"
         }
       ],
-      "linksAltair": ""
+      "linksAltair": "https://altairpb.ru/katalog/product/view/54/2263"
     },
     {
       "id": 6,
       "name": "ЭкоЧас-Актив",
-      "title": "",
+      "title": null,
       "img": "assets/products/images/ЭкоЧас-Актив.jpg",
+      "price": 1600,
       "category": [
         "medicine",
         "life"
       ],
       "documents": [
         {
+          "id": 1,
           "name": "ЭкоЧас-Актив инструкция",
           "documentLink": "assets/products/documents/ЭкоЧас-Актив/instructions/ЭкоЧас-Актив инструкция.pdf"
         },
         {
+          "id": 2,
           "name": "ЭкоЧас-Актив декларация о соответствии",
           "documentLink": "assets/products/documents/ЭкоЧас-Актив/declarations/ЭкоЧас-Актив декларация.pdf"
         },
         {
+          "id": 3,
           "name": "ЭкоЧас-Актив краткая памятка по приминению",
           "documentLink": "assets/products/documents/ЭкоЧас-Актив/descriptions/ЭкоЧас-Актив краткая памятка по применению.pdf"
         },
         {
+          "id": 4,
           "name": "ЭкоЧас-Актив свидетельство",
           "documentLink": "assets/products/documents/ЭкоЧас-Актив/testimonies/ЭкоЧас-Актив свидетельство.jpg"
         }
       ],
-      "linksAltair": ""
+      "linksAltair": "https://altairpb.ru/katalog/product/view/54/2264"
     },
     {
       "id": 7,
       "name": "Ульянка",
-      "title": "",
+      "title": null,
       "img": "assets/products/images/Ульянка.jpg",
+      "price": 1600,
       "category": [
         "antiseptic",
         "life"
       ],
       "documents": [
         {
+          "id": 1,
           "name": "Ульянка инструкция",
           "documentLink": "assets/products/documents/Ульянка/instructions/Ульянка инструкция.docx"
         },
         {
+          "id": 2,
           "name": "Ульянка декларация",
           "documentLink": "assets/products/documents/Ульянка/declarations/Ульянка декларация.pdf"
         }
       ],
-      "linksAltair": ""
+      "linksAltair": null
     },
     {
       "id": 8,
       "name": "Сальмодез",
-      "title": "",
+      "title": null,
       "img": "assets/products/images/Сальмодез.jpg",
+      "price": 1600,
       "category": [
         "birdProcessing"
       ],
       "documents": [
         {
+          "id": 1,
           "name": "Сальмодез инструкция для прицеперерабатывающей промышленности",
           "documentLink": "assets/products/documents/Сальмодез/instructions/Сальмодез инструкция птицепереработка.pdf"
         },
         {
+          "id": 2,
           "name": "Сальмодез декларация о соответствии",
           "documentLink": "assets/products/documents/Сальмодез/declarations/Сальмодез декларация.pdf"
         }
       ],
-      "linksAltair": ""
+      "linksAltair": "https://altairpb.ru/katalog/product/view/54/2262"
     },
     {
       "id": 9,
       "name": "Палоцид",
-      "title": "",
+      "title": null,
       "img": "assets/products/images/Палоцид.jpg",
+      "price": 1600,
       "category": [
         "veterinary"
       ],
       "documents": [
         {
+          "id": 1,
           "name": "ПАЛОЦИД инструкция",
           "documentLink": "assets/products/documents/Палоцид/instructions/ПАЛОЦИД инструкция.docx"
         },
         {
+          "id": 2,
           "name": "Палоцид декларация",
           "documentLink": "assets/products/documents/Палоцид/declarations/Палоцид декларация.pdf"
         }
@@ -393,17 +444,20 @@
     {
       "id": 10,
       "name": "Палоцид-50",
-      "title": "",
+      "title": null,
       "img": "assets/products/images/Палоцид.jpg",
+      "price": 1600,
       "category": [
         "veterinary"
       ],
       "documents": [
         {
+          "id": 1,
           "name": "ПАЛОЦИД инструкция",
           "documentLink": "assets/products/documents/Палоцид/instructions/ПАЛОЦИД инструкция.docx"
         },
         {
+          "id": 2,
           "name": "Палоцид декларация",
           "documentLink": "assets/products/documents/Палоцид/declarations/Палоцид декларация.pdf"
         }
@@ -413,17 +467,20 @@
     {
       "id": 11,
       "name": "Палоцид К-0,5",
-      "title": "",
+      "title": null,
       "img": "assets/products/images/Палоцид.jpg",
+      "price": 1600,
       "category": [
         "veterinary"
       ],
       "documents": [
         {
+          "id": 1,
           "name": "ПАЛОЦИД инструкция",
           "documentLink": "assets/products/documents/Палоцид/instructions/ПАЛОЦИД инструкция.docx"
         },
         {
+          "id": 2,
           "name": "Палоцид декларация",
           "documentLink": "assets/products/documents/Палоцид/declarations/Палоцид декларация.pdf"
         }
@@ -433,17 +490,20 @@
     {
       "id": 12,
       "name": "Палоцид НК",
-      "title": "",
+      "title": null,
       "img": "assets/products/images/Палоцид.jpg",
+      "price": 1600,
       "category": [
         "veterinary"
       ],
       "documents": [
         {
+          "id": 1,
           "name": "ПАЛОЦИД инструкция",
           "documentLink": "assets/products/documents/Палоцид/instructions/ПАЛОЦИД инструкция.docx"
         },
         {
+          "id": 2,
           "name": "Палоцид декларация",
           "documentLink": "assets/products/documents/Палоцид/declarations/Палоцид декларация.pdf"
         }
@@ -453,59 +513,68 @@
     {
       "id": 13,
       "name": "НЕО-К",
-      "title": "",
+      "title": null,
       "img": "assets/products/images/НЕО-К.jpg",
+      "price": 1600,
       "category": [
         "foodIndustry",
         "life"
       ],
       "documents": [
         {
+          "id": 1,
           "name": "НЕО-к инструкция",
           "documentLink": "assets/products/documents/НЕО-К/instructions/НЕО-к инструкция.pdf"
         },
         {
+          "id": 2,
           "name": "НЕО-К краткая памятка по применению",
           "documentLink": "assets/products/documents/НЕО-К/descriptions/НЕО-К краткая памятка по применению.pdf"
         }
       ],
-      "linksAltair": ""
+      "linksAltair": null
     },
     {
       "id": 14,
       "name": "НЕО-Щ",
-      "title": "",
+      "title": null,
       "img": "assets/products/images/НЕО-Щ.jpg",
+      "price": 1600,
       "category": [
         "foodIndustry",
         "life"
       ],
       "documents": [
         {
+          "id": 1,
           "name": "НЕО-Щ инструкция",
           "documentLink": "assets/products/documents/НЕО-Щ/instructions/НЕО-Щ инструкция.pdf"
         },
         {
+          "id": 2,
           "name": "НЕО-Щ краткая памятка по применению",
           "documentLink": "assets/products/documents/НЕО-Щ/descriptions/НЕО-Щ краткая памятка по применению.pdf"
         }
       ],
-      "linksAltair": ""
+      "linksAltair": null
     },
     {
       "id": 15,
       "name": "Антисептик ПАЛ-1 0.3%",
-      "title": "",
+      "title": null,
       "img": "assets/products/images/Антисептик ПАЛ-1 0.3.jpg",
+      "price": 220,
       "category": [
         "antiseptic"
       ],
       "documents": [
         {
+          "id": 1,
           "name": "Антисептик ПАЛ-1 0.3 инструкция",
           "documentLink": "assets/products/documents/Антисептик ПАЛ-1 0.3/instructions/Антисептик ПАЛ-1 инструкция.docx"
         },
         {
+          "id": 2,
           "name": "Антисептик ПАЛ-1 0.3 описапние",
           "documentLink": "assets/products/documents/Антисептик ПАЛ-1 0.3/descriptions/ПАЛ раб описание.pdf"
         }
@@ -515,13 +584,14 @@
     {
       "id": 16,
       "name": "Чистые Диски",
-      "title": "",
+      "title": null,
       "img": "assets/products/images/ЧистыеДиски.jpg",
+      "price": 1600,
       "category": [
         "life"
       ],
       "documents": [],
-      "linksAltair": ""
+      "linksAltair": null
     }
   ]
 }

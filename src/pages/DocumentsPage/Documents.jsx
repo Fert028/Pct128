@@ -50,7 +50,7 @@ export default function Documents() {
           <div>
             <ul className={style.listing}>
               {instructions.map(el => (
-                <li key={el.name} className={style.docsLinks}>
+                <li key={el.id} className={style.docsLinks}>
                   <a download={`../../${el.documentLink}`} title='Скачать этот файл'>
                     <img className={style.downloadIcon} src={downloadIcon} alt="Скачать" />
                   </a>
@@ -66,7 +66,7 @@ export default function Documents() {
           <div>
             <ul className={style.listing}>
               {declarations.map(el => (
-                <li key={el.name} className={style.docsLinks}>
+                <li key={el.id} className={style.docsLinks}>
                   <a download={`../../${el.documentLink}`} title='Скачать этот файл'>
                     <img className={style.downloadIcon} src={downloadIcon} alt="Скачать" />
                   </a>
@@ -82,7 +82,7 @@ export default function Documents() {
           <div>
             <ul className={style.listing}>
               {certificates.map(el => (
-                <li key={el.name} className={style.docsLinks}>
+                <li key={el.id} className={style.docsLinks}>
                   <a download={`../../${el.documentLink}`} title='Скачать этот файл'>
                     <img className={style.downloadIcon} src={downloadIcon} alt="Скачать" />
                   </a>

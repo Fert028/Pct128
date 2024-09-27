@@ -1,1 +1,5 @@
 @import './Variables.scss';
+
+.container {
+  padding: calc($index * 3) calc($index * 4);
+}

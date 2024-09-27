@@ -13,13 +13,14 @@ export default function ProductCard(props) {
   },[product])
 
   return (
-    <NavLink to={`/product/${product.id}`} className={style.card} title={`Перейти к ${product.name}`}> 
+    <NavLink to={`/catalog/product/${product.id}`} className={style.card} title={`Перейти к ${product.name}`}> 
       <div className={style.card__container}>
         <div className={style.img__container}>
           <img src={product.img} />
         </div>
         <div className={style.product__title}>
           <h4>{product.name}</h4>
+          <p>{product.price}р.</p>
           <p className={classNames(style.goText, 'text')}>Перейти к товару</p>
         </div>
       </div>
