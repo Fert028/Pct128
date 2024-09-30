@@ -1,11 +1,12 @@
 @import "./Variables.scss";
 
-$card-width: calc($index * 13);
+$card-width13: calc($index * 13);
+$card-width10: calc($index * 10);
 
 .card {
   display: block;
   position: relative;
-  width: $card-width;
+  width: $card-width13;
   aspect-ratio: 9 / 10;
   border-radius: $index;
   box-shadow: 0 5px 10px rgba(black, 0.25);
@@ -35,7 +36,7 @@ $card-width: calc($index * 13);
   width: min-content;
   height: min-content;
   img {
-    width: $card-width;
+    width: $card-width13;
     border-radius: $index;
     aspect-ratio: 4 / 3;
     object-fit: cover;
@@ -45,4 +46,13 @@ $card-width: calc($index * 13);
   padding: 0.6rem 1rem;
   display: grid;
   justify-content: space-between;
+}
+
+@media (width > 1600px) {
+  .card {
+    width: $card-width10;
+  }
+  .img__container img {
+    width: $card-width10;
+  }
 }

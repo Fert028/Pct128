@@ -171,7 +171,7 @@ section {
   text-shadow: 0 3px 6px rgba(black, .25);
 }
 .text {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: rgba($text-color, .55);
 }
@@ -179,5 +179,21 @@ section {
   transition: $transition;
   &:hover {
     color: $primary-color;
+  }
+}
+
+@media (width > 1600px) {
+  button {
+    padding: calc($index * 0.3) calc($index * 0.6);
+  }
+  .header,
+  .footer {
+    padding-inline: calc($index * 4);
+  }
+  .pagesMenu  {
+    padding: calc($index * 0.4);
+    ul {
+      gap: calc($index * 1);
+    }
   }
 }

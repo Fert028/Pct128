@@ -50,3 +50,9 @@
   grid-template-columns: repeat(4, 1fr);
   gap: calc($index * 2);
 }
+
+@media (width > 1600px) {
+  .wrapper {
+    padding-inline: calc($index * 6);
+  }
+}

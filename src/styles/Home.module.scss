@@ -16,7 +16,6 @@
     color: $primary-color;
     font-weight: 600;
     span {
-      // color: $text-color;
       font-weight: 500;
     }
   }
@@ -102,5 +101,11 @@
   }
   70%, 90% {
     width: 100%;
+  }
+}
+
+@media (width > 1600px) {
+  .container section {
+    padding-inline: calc($index * 6);
   }
 }

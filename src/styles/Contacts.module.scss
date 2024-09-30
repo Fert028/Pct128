@@ -4,7 +4,6 @@
   padding: calc($index * 3) calc($index * 4);
   display: flex;
   flex-direction: column;
-  gap: calc($index * 3);
 }
 .PctConatactCard {
   box-shadow: inset 0 0 10px rgba(black, 0.25);
@@ -56,5 +55,11 @@
         width: 16%;
       }
     }
+  }
+}
+
+@media (width > 1600px) {
+  .container {
+    padding-inline: calc($index * 6);
   }
 }
