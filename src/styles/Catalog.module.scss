@@ -29,7 +29,7 @@
   padding: calc($index * .5) $index;
   border-radius: calc($index * 2);
   border: 1px solid transparent;
-  font-size: calc($index * .8);
+  font-size: 16px;
   font-weight: 500;
   transition: $transition ease;
   &:hover {

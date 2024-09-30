@@ -9,9 +9,7 @@
 .container {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid $titan-color;
   padding: $index;
-  padding-bottom: calc($index * 3);
 }
 .contentProduct {
   display: flex;

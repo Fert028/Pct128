@@ -39,13 +39,12 @@ html {
 }
 body {
   width: $full-width;
-  margin: 0;
   padding-block: 30px;
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Ubuntu",
     "FuturaBookC", "FuturaBookC-Italic", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: calc($index * 0.8);
+  font-size: 16px;
   color: $text-color;
   line-height: 1.25;
   letter-spacing: 0.05em;
@@ -69,7 +68,7 @@ button {
   cursor: pointer;
   color: $text-color;
   padding: calc($index * 0.4) calc($index * 0.8);
-  font-size: calc($index * 0.8);
+  font-size: 16px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   letter-spacing: 1px;
@@ -172,7 +171,7 @@ section {
   text-shadow: 0 3px 6px rgba(black, .25);
 }
 .text {
-  font-size: calc($index * 0.7);
+  font-size: 14px;
   font-weight: 400;
   color: rgba($text-color, .55);
 }

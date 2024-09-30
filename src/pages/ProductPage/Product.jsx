@@ -58,11 +58,6 @@ export default function Product() {
         </div>
       </div>
 
-      {/* <div className={style.relatedProducts}>
-        <h2>Товары из этой категории</h2>
-        <div className={style.products}></div>
-      </div> */}
-
     </div>
   )
 }
