@@ -1,6 +1,6 @@
-@import './Variables.scss';
+@import "./Variables.scss";
 
-$card-width: calc($index * 13); 
+$card-width: calc($index * 13);
 
 .card {
   display: block;
@@ -8,7 +8,7 @@ $card-width: calc($index * 13);
   width: $card-width;
   aspect-ratio: 9 / 10;
   border-radius: $index;
-  box-shadow: 0 5px 10px rgba(black, .25);
+  box-shadow: 0 5px 10px rgba(black, 0.25);
   cursor: pointer;
   transition: $transition linear;
   .goText {
@@ -16,7 +16,8 @@ $card-width: calc($index * 13);
     transition: $transition linear;
   }
   &:hover {
-    transform: translateY(-5%);
+    transform: translateY(-3%);
+    box-shadow: 0 15px 30px rgba(black, 0.25);
     .goText {
       opacity: 1;
     }
@@ -41,7 +42,7 @@ $card-width: calc($index * 13);
   }
 }
 .product__title {
-  padding: .6rem 1rem;
+  padding: 0.6rem 1rem;
   display: grid;
   justify-content: space-between;
 }

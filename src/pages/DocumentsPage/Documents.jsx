@@ -1,6 +1,6 @@
-import style from '../../styles/Documents.module.scss';
-import data from '../../data/products.json';
-import downloadIcon from '../../assets/img/icons/download_icon.svg';
+import style from "../../styles/Documents.module.scss";
+import data from "../../data/products.json";
+import downloadIcon from "../../assets/img/icons/download_icon.svg";
 
 export default function Documents() {
   const patents = data.documents.patents;
@@ -9,20 +9,22 @@ export default function Documents() {
   const declarations = data.documents.declarations;
   const certificates = data.documents.certificates;
 
-  
   return (
     <div className={style.wrapper}>
-      <h1>Документы</h1>
+      <h1 className="title">Документы</h1>
       <div className={style.container}>
-
         <section className={style.sectionDocs}>
           <h2>Патенты</h2>
           <div>
             <ul className={style.patentsContainer}>
-              {patents.map(el => (
+              {patents.map((el) => (
                 <li key={el.id}>
-                  <a href={`../../${el.documentLink}`} target='blank'>
-                    <img className={style.imgDocs} src={`../../${el.documentLink}`} alt='' />
+                  <a href={`../../${el.documentLink}`} target="blank">
+                    <img
+                      className={style.imgDocs}
+                      src={`../../${el.documentLink}`}
+                      alt=""
+                    />
                   </a>
                 </li>
               ))}
@@ -34,10 +36,14 @@ export default function Documents() {
           <h2>Награды</h2>
           <div>
             <ul className={style.awardsContainer}>
-              {awards.map(el => (
+              {awards.map((el) => (
                 <li key={el.id}>
-                  <a href={`../../${el.documentLink}`} target='blank'>
-                    <img className={style.imgDocs} src={`../../${el.documentLink}`} alt='' />
+                  <a href={`../../${el.documentLink}`} target="blank">
+                    <img
+                      className={style.imgDocs}
+                      src={`../../${el.documentLink}`}
+                      alt=""
+                    />
                   </a>
                 </li>
               ))}
@@ -49,12 +55,25 @@ export default function Documents() {
           <h2>Инструкции</h2>
           <div>
             <ul className={style.listing}>
-              {instructions.map(el => (
+              {instructions.map((el) => (
                 <li key={el.id} className={style.docsLinks}>
-                  <a download={`../../${el.documentLink}`} title='Скачать этот файл'>
-                    <img className={style.downloadIcon} src={downloadIcon} alt="Скачать" />
+                  <a
+                    download={`../../${el.documentLink}`}
+                    title="Скачать этот файл"
+                  >
+                    <img
+                      className={style.downloadIcon}
+                      src={downloadIcon}
+                      alt="Скачать"
+                    />
                   </a>
-                  <a href={`../../${el.documentLink}`} target='blank'>{el.name}</a>
+                  <a
+                    href={`../../${el.documentLink}`}
+                    target="blank"
+                    className="link"
+                  >
+                    {el.name}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -65,12 +84,25 @@ export default function Documents() {
           <h2>Декларации</h2>
           <div>
             <ul className={style.listing}>
-              {declarations.map(el => (
+              {declarations.map((el) => (
                 <li key={el.id} className={style.docsLinks}>
-                  <a download={`../../${el.documentLink}`} title='Скачать этот файл'>
-                    <img className={style.downloadIcon} src={downloadIcon} alt="Скачать" />
+                  <a
+                    download={`../../${el.documentLink}`}
+                    title="Скачать этот файл"
+                  >
+                    <img
+                      className={style.downloadIcon}
+                      src={downloadIcon}
+                      alt="Скачать"
+                    />
                   </a>
-                  <a href={`../../${el.documentLink}`} target='blank'>{el.name}</a>
+                  <a
+                    href={`../../${el.documentLink}`}
+                    target="blank"
+                    className="link"
+                  >
+                    {el.name}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -81,18 +113,30 @@ export default function Documents() {
           <h2>Сертификаты</h2>
           <div>
             <ul className={style.listing}>
-              {certificates.map(el => (
+              {certificates.map((el) => (
                 <li key={el.id} className={style.docsLinks}>
-                  <a download={`../../${el.documentLink}`} title='Скачать этот файл'>
-                    <img className={style.downloadIcon} src={downloadIcon} alt="Скачать" />
+                  <a
+                    download={`../../${el.documentLink}`}
+                    title="Скачать этот файл"
+                  >
+                    <img
+                      className={style.downloadIcon}
+                      src={downloadIcon}
+                      alt="Скачать"
+                    />
                   </a>
-                  <a href={`../../${el.documentLink}`} target='blank'>{el.name}</a>
+                  <a
+                    href={`../../${el.documentLink}`}
+                    target="blank"
+                    className="link"
+                  >
+                    {el.name}
+                  </a>
                 </li>
               ))}
             </ul>
           </div>
         </section>
-
       </div>
     </div>
   );

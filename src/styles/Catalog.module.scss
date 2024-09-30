@@ -6,9 +6,6 @@
   gap: calc($index * 4);
   padding: calc($index * 3);
 }
-.hero {
-  text-align: center;
-}
 .container {
   display: flex;
   flex-direction: column;
@@ -48,8 +45,8 @@
 .products {
   position: relative;
   display: grid;
+  place-items: center;
   grid-template-rows: auto;
   grid-template-columns: repeat(4, 1fr);
-  row-gap: calc($index * 4);
-  place-items: center;
+  gap: calc($index * 2);
 }

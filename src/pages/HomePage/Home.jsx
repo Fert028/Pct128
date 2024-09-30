@@ -1,21 +1,38 @@
-import style from '../../styles/Home.module.scss';
-import imageTitle from '../../assets/img/images/him.jpg';
-import logo from '../../assets/img/logo/logoПХТ128.svg';
-import ProductCard from '../../components/ProductCard';
-import AltairContactCard from '../ContactsPage/AltairContactCard';
+import style from "../../styles/Home.module.scss";
+import imageTitle from "../../assets/img/images/him.jpg";
+import logo from "../../assets/img/logo/logoПХТ128.svg";
+import ProductCard from "../../components/ProductCard";
+import AltairContactCard from "../ContactsPage/AltairContactCard";
 
 export default function Home() {
   return (
     <div className={style.container}>
-
       <section>
         <div className={style.home__title}>
           <article className={style.heroTitle__container}>
-            <h1 className={style.heroTitle}>П<span className={style.animationText} data-line='рогрессивные'>рогрессивные</span></h1>
-            <h1 className={style.heroTitle}>Х<span className={style.animationText} data-line='имические'>имические</span></h1>
-            <h1 className={style.heroTitle}>Т<span className={style.animationText} data-line='ехнологии'>ехнологии</span></h1>
+            <h1 className={style.heroTitle}>
+              П
+              <span className={style.animationText} data-line="рогрессивные">
+                рогрессивные
+              </span>
+            </h1>
+            <h1 className={style.heroTitle}>
+              Х
+              <span className={style.animationText} data-line="имические">
+                имические
+              </span>
+            </h1>
+            <h1 className={style.heroTitle}>
+              Т
+              <span className={style.animationText} data-line="ехнологии">
+                ехнологии
+              </span>
+            </h1>
             <br />
-            <p>"ПХТ" - научно-производственное предприятие, осуществляющее полный цикл выпускаемой продукции.</p>
+            <p className="text">
+              "ПХТ" - научно-производственное предприятие, осуществляющее полный
+              цикл выпускаемой продукции.
+            </p>
           </article>
           <img src={imageTitle} alt="him" className={style.imageTitle} />
         </div>
@@ -27,9 +44,9 @@ export default function Home() {
             <h1>Топ товаров</h1>
           </div>
           <div className={style.home__productsItems}>
-            <ProductCard id={1} />
-            <ProductCard id={8} />
-            <ProductCard id={15} />
+            <ProductCard productId={1} />
+            <ProductCard productId={8} />
+            <ProductCard productId={15} />
           </div>
         </div>
       </section>
@@ -41,11 +58,18 @@ export default function Home() {
             <div className={style.advantages__container__item}>
               <article>
                 <h2>Беззащитность инфекций</h2>
-                <p>Гарантированно более эффективное применение дезсредств на его основе по сравнению аналогичными дезсредствами</p>
+                <p className="text">
+                  Гарантированно более эффективное применение дезсредств на его
+                  основе по сравнению аналогичными дезсредствами
+                </p>
               </article>
               <article>
                 <h2>Быстрее дезинфицирует</h2>
-                <p>Экспозиция препарата, нанесенного на обрабатываемые поверхности, в два раза быстрее, по сравнению с аналогичными препаратами на основе АДМБАХ</p>
+                <p className="text">
+                  Экспозиция препарата, нанесенного на обрабатываемые
+                  поверхности, в два раза быстрее, по сравнению с аналогичными
+                  препаратами на основе АДМБАХ
+                </p>
               </article>
             </div>
             <div className={style.logo__container}>
@@ -56,11 +80,18 @@ export default function Home() {
             <div className={style.advantages__container__item}>
               <article>
                 <h2>Улучшенные моющие свойства</h2>
-                <p>Линейка новых дезинфицирующих концентратов обладает лучшими моющими характеристиками</p>
+                <p className="text">
+                  Линейка новых дезинфицирующих концентратов обладает лучшими
+                  моющими характеристиками
+                </p>
               </article>
               <article>
                 <h2>Производится в России</h2>
-                <p>Российское производство позволяет удовлетворить любой спрос на высокоэффективные дезинфицирующие средства, сохраняя низкие цены</p>
+                <p className="text">
+                  Российское производство позволяет удовлетворить любой спрос на
+                  высокоэффективные дезинфицирующие средства, сохраняя низкие
+                  цены
+                </p>
               </article>
             </div>
           </div>
@@ -68,7 +99,6 @@ export default function Home() {
       </section>
 
       <AltairContactCard />
-      
-    </div>  
+    </div>
   );
 }
