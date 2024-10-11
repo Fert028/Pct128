@@ -5,6 +5,9 @@
   display: flex;
   flex-direction: column;
   gap: calc($index * 4);
+  p {
+    text-wrap: balance;
+  }
 }
 .title {
   text-align: center;
@@ -13,6 +16,7 @@
   padding-bottom: calc($index * 4);
   padding-inline: calc($index * 2);
   border-bottom: 1px solid $titan-color;
+  text-wrap: balance;
 }
 .content1__container {
   margin-inline: auto;
@@ -28,19 +32,17 @@
     color: $primary-color;
   }
   .content1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: calc($index * 3);
+    display: flex;
+    justify-content: space-between;
   }
 }
-.content2__container {
+.content2 {
   background-color: $accent-color;
   border-radius: calc($index * 2);
   box-shadow: 0 10px 20px rgba(black, 0.5);
   padding: calc($index * 3);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 60px;
+  display: flex;
+  justify-content: space-between;
   color: $basic-color;
   h2 {
     color: $yellow;
@@ -49,20 +51,50 @@
 .historyCreations__container {
   display: flex;
   flex-direction: column;
-  gap: calc($index * 2);
+  gap: 60px;
   box-shadow: inset 0 0 10px rgba(black, .25);
   border-radius: calc($index * 2);
   h2 {
     text-align: center;
   }
-  .historyCreations {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: inherit;
-    h3 {
-      color: $primary-color;
-    }
+}
+.historyCreations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 60px;
+  h3 {
+    color: $primary-color;
   }
 }
 
+@media (width < 940px) {
+  .content1 {
+    flex-direction: column;
+    gap: 60px;
+    border-bottom: 1px solid $text-color;
+    padding-bottom: 60px;
+  }
+  .content2 {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .historyCreations {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+@media (width < 700px) {
+  .container {
+    padding: $index;
+  }
+  .title {
+    padding-inline: 0;
+    width: 100%;
+  }
+  .historyCreations {
+    display: flex;
+    flex-direction: column;
+  }
+}

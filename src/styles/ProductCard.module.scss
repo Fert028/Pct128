@@ -1,15 +1,15 @@
 @import "./Variables.scss";
 
-$card-width13: calc($index * 13);
-$card-width10: calc($index * 10);
+$card-width: clamp(222px, 256px, 268px);
+$b-radius: 20px;
 
 .card {
   display: block;
   position: relative;
-  width: $card-width13;
+  width: $card-width;
   aspect-ratio: 9 / 10;
-  border-radius: $index;
-  box-shadow: 0 5px 10px rgba(black, 0.25);
+  border-radius: $b-radius;
+  box-shadow: 0 3px 6px 2px rgba(black, 0.25);
   cursor: pointer;
   transition: $transition linear;
   .goText {
@@ -17,7 +17,6 @@ $card-width10: calc($index * 10);
     transition: $transition linear;
   }
   &:hover {
-    transform: translateY(-3%);
     box-shadow: 0 15px 30px rgba(black, 0.25);
     .goText {
       opacity: 1;
@@ -36,23 +35,31 @@ $card-width10: calc($index * 10);
   width: min-content;
   height: min-content;
   img {
-    width: $card-width13;
-    border-radius: $index;
+    width: $card-width;
+    border-radius: $b-radius;
     aspect-ratio: 4 / 3;
     object-fit: cover;
   }
 }
 .product__title {
+  position: relative;
   padding: 0.6rem 1rem;
   display: grid;
   justify-content: space-between;
+  img {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0.5;
+  }
+}
+.arrowDown {
+  aspect-ratio: 1;
+  width: 18px;
 }
 
-@media (width > 1600px) {
-  .card {
-    width: $card-width10;
-  }
-  .img__container img {
-    width: $card-width10;
+@media (width < 700px) {
+  .goText {
+    display: none;
   }
 }

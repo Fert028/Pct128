@@ -1,52 +1,39 @@
 import style from "../../styles/Home.module.scss";
-import imageTitle from "../../assets/img/images/him.jpg";
+import imageHim from "../../assets/img/images/him.jpg";
 import logo from "../../assets/img/logo/logoПХТ128.svg";
 import ProductCard from "../../components/ProductCard";
-import AltairContactCard from "../ContactsPage/AltairContactCard";
+import { NavLink } from "react-router-dom";
 
-export default function Home() {
+export default function Home(props) {
+  document.title = props.title;
   return (
     <div className={style.container}>
       <section>
-        <div className={style.home__title}>
-          <article className={style.heroTitle__container}>
-            <h1 className={style.heroTitle}>
-              П
-              <span className={style.animationText} data-line="рогрессивные">
-                рогрессивные
-              </span>
-            </h1>
-            <h1 className={style.heroTitle}>
-              Х
-              <span className={style.animationText} data-line="имические">
-                имические
-              </span>
-            </h1>
-            <h1 className={style.heroTitle}>
-              Т
-              <span className={style.animationText} data-line="ехнологии">
-                ехнологии
-              </span>
-            </h1>
+        <div className={style.title}>
+          <article className={style.hero__container}>
+            <h1 className={style.hero}>П<span>рогрессивные</span></h1>
+            <h1 className={style.hero}>Х<span>имические</span></h1>
+            <h1 className={style.hero}>Т<span>ехнологии</span></h1>
             <br />
-            <p className="text">
-              "ПХТ" - научно-производственное предприятие, осуществляющее полный
-              цикл выпускаемой продукции.
-            </p>
+            <p className="text">"ПХТ" - научно-производственное предприятие, осуществляющее полный цикл выпускаемой продукции.</p>
           </article>
-          <img src={imageTitle} alt="him" className={style.imageTitle} />
+          <img src={imageHim} alt="him" className={style.title__image} />
         </div>
       </section>
 
       <section>
-        <div className={style.home__products}>
-          <div className={style.home__productsTitle}>
-            <h1>Топ товаров</h1>
-          </div>
-          <div className={style.home__productsItems}>
+        <div className={style.products}>
+          <h1>Топ товаров</h1>
+          <div className={style.products__container}>
             <ProductCard productId={1} />
             <ProductCard productId={8} />
             <ProductCard productId={15} />
+          </div>
+          <div>
+            <NavLink to="/catalog" className={style.openAllProducts}>
+              Перейти в каталог
+              <span></span>
+            </NavLink>
           </div>
         </div>
       </section>
@@ -55,7 +42,7 @@ export default function Home() {
         <div className={style.advantages}>
           <h1>Преимущества</h1>
           <div className={style.advantages__container}>
-            <div className={style.advantages__container__item}>
+            <div className={style.advantages__item}>
               <article>
                 <h2>Беззащитность инфекций</h2>
                 <p className="text">
@@ -74,10 +61,10 @@ export default function Home() {
             </div>
             <div className={style.logo__container}>
               <a href="/">
-                <img src={logo} alt="logo" className={style.logo__advantages} />
+                <img src={logo} alt="logo" />
               </a>
             </div>
-            <div className={style.advantages__container__item}>
+            <div className={style.advantages__item}>
               <article>
                 <h2>Улучшенные моющие свойства</h2>
                 <p className="text">
@@ -97,8 +84,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <AltairContactCard />
+      
     </div>
   );
 }

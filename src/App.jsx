@@ -11,13 +11,19 @@ import Product from "./pages/ProductPage/Product";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={ <Layout /> }>
-        <Route index element={ <Home /> } />
-        <Route path="/about" element={ <About /> } />
-        <Route path="/catalog" element={ <Catalog /> } />
-        <Route path="/catalog/product/:id" element={ <Product /> } />
-        <Route path="/contacts" element={ <Contacts /> } />
-        <Route path="/documents" element={ <Documents /> } />
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home title={"ПХТ"} />} />
+        <Route path="/about" element={<About title={"ПХТ - О нас"} />} />
+        <Route path="/catalog" element={<Catalog title={"ПХТ - Каталог"} />} />
+        <Route path="/product/:id" element={<Product />} />
+        <Route
+          path="/contacts"
+          element={<Contacts title={"ПХТ - Контакты"} />}
+        />
+        <Route
+          path="/documents"
+          element={<Documents title={"ПХТ - Документы"} />}
+        />
       </Route>
     </Routes>
   );

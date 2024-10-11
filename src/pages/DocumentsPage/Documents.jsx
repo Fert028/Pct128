@@ -2,7 +2,9 @@ import style from "../../styles/Documents.module.scss";
 import data from "../../data/products.json";
 import downloadIcon from "../../assets/img/icons/download_icon.svg";
 
-export default function Documents() {
+export default function Documents(props) {
+  document.title = props.title;
+
   const patents = data.documents.patents;
   const awards = data.documents.awards;
   const instructions = data.documents.instructions;

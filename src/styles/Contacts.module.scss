@@ -35,15 +35,10 @@
   flex-direction: column;
   align-items: center;
   gap: 60px;
-  h1 {
-    color: white;
-  }
   ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: calc($index * 2);
     li {
-      max-width: 15svw;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -52,7 +47,7 @@
         color: $yellow;
       }
       img {
-        width: 16%;
+        width: 32px;
       }
     }
   }
@@ -61,5 +56,54 @@
 @media (width > 1600px) {
   .container {
     padding-inline: calc($index * 6);
+  }
+}
+@media (width < 900px) {
+  .container {
+    gap: 80px;
+    padding: calc($index * 2);
+    section {
+      padding: 0;
+    }
+  }
+  .PctConatactCard, .partner {
+    padding: calc($index * 2);
+  }
+  .PctConatactCard {
+    flex-direction: column;
+  }
+  .partner ul {
+    gap: 30px;
+  }
+}
+@media (width < 680px) {
+  .PctConatactCard {
+    gap: 30px;
+    height: auto;
+  }
+  .genereal {
+    gap: 30px;
+    .logoPct {
+      margin: auto;
+    }
+  }
+  .partner ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: calc($index * 3);
+  }
+  .altairLogo {
+    width: 100%;
+    img {
+      width: inherit;
+    }
+  }
+}
+@media (width < 364px) {
+  .partner ul {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    li {
+      gap: 10px;
+    }
   }
 }

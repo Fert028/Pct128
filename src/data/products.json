@@ -105,8 +105,8 @@
       },
       {
         "id": 9,
-        "name": "ПАЛОЦИД инструкция",
-        "documentLink": "assets/products/documents/Палоцид/instructions/ПАЛОЦИД инструкция.docx"
+        "name": "Палоцид инструкция",
+        "documentLink": "assets/products/documents/Палоцид/instructions/Палоцид инструкция.docx"
       },
       {
         "id": 10,
@@ -172,10 +172,7 @@
       "title": null,
       "img": "assets/products/images/ПАЛ-1.jpg",
       "price": 1600,
-      "category": [
-        "medicine",
-        "life"
-      ],
+      "category": ["medicine", "life"],
       "documents": [
         {
           "id": 1,
@@ -206,11 +203,7 @@
       "title": null,
       "img": "assets/products/images/ПАЛ-1.jpg",
       "price": 1600,
-      "category": [
-        "medicine",
-        "foodIndustry",
-        "life"
-      ],
+      "category": ["medicine", "foodIndustry", "life"],
       "documents": [
         {
           "id": 1,
@@ -241,10 +234,7 @@
       "title": null,
       "img": "assets/products/images/ПАЛ-1.jpg",
       "price": 1600,
-      "category": [
-        "birdProcessing",
-        "life"
-      ],
+      "category": ["birdProcessing", "life"],
       "documents": [
         {
           "id": 1,
@@ -275,10 +265,7 @@
       "title": null,
       "img": "assets/products/images/ПАЛ-1.jpg",
       "price": 1600,
-      "category": [
-        "veterinary",
-        "life"
-      ],
+      "category": ["veterinary", "life"],
       "documents": [
         {
           "id": 1,
@@ -309,10 +296,7 @@
       "title": null,
       "img": "assets/products/images/Экочас.jpg",
       "price": 1600,
-      "category": [
-        "medicine",
-        "life"
-      ],
+      "category": ["medicine", "life"],
       "documents": [
         {
           "id": 1,
@@ -343,10 +327,7 @@
       "title": null,
       "img": "assets/products/images/ЭкоЧас-Актив.jpg",
       "price": 1600,
-      "category": [
-        "medicine",
-        "life"
-      ],
+      "category": ["medicine", "life"],
       "documents": [
         {
           "id": 1,
@@ -377,10 +358,7 @@
       "title": null,
       "img": "assets/products/images/Ульянка.jpg",
       "price": 1600,
-      "category": [
-        "antiseptic",
-        "life"
-      ],
+      "category": ["antiseptic", "life"],
       "documents": [
         {
           "id": 1,
@@ -401,9 +379,7 @@
       "title": null,
       "img": "assets/products/images/Сальмодез.jpg",
       "price": 1600,
-      "category": [
-        "birdProcessing"
-      ],
+      "category": ["birdProcessing"],
       "documents": [
         {
           "id": 1,
@@ -424,14 +400,12 @@
       "title": null,
       "img": "assets/products/images/Палоцид.jpg",
       "price": 1600,
-      "category": [
-        "veterinary"
-      ],
+      "category": ["veterinary"],
       "documents": [
         {
           "id": 1,
-          "name": "ПАЛОЦИД инструкция",
-          "documentLink": "assets/products/documents/Палоцид/instructions/ПАЛОЦИД инструкция.docx"
+          "name": "Палоцид инструкция",
+          "documentLink": "assets/products/documents/Палоцид/instructions/Палоцид инструкция.docx"
         },
         {
           "id": 2,
@@ -447,14 +421,12 @@
       "title": null,
       "img": "assets/products/images/Палоцид.jpg",
       "price": 1600,
-      "category": [
-        "veterinary"
-      ],
+      "category": ["veterinary"],
       "documents": [
         {
           "id": 1,
-          "name": "ПАЛОЦИД инструкция",
-          "documentLink": "assets/products/documents/Палоцид/instructions/ПАЛОЦИД инструкция.docx"
+          "name": "Палоцид инструкция",
+          "documentLink": "assets/products/documents/Палоцид/instructions/Палоцид инструкция.docx"
         },
         {
           "id": 2,
@@ -470,14 +442,12 @@
       "title": null,
       "img": "assets/products/images/Палоцид.jpg",
       "price": 1600,
-      "category": [
-        "veterinary"
-      ],
+      "category": ["veterinary"],
       "documents": [
         {
           "id": 1,
-          "name": "ПАЛОЦИД инструкция",
-          "documentLink": "assets/products/documents/Палоцид/instructions/ПАЛОЦИД инструкция.docx"
+          "name": "Палоцид инструкция",
+          "documentLink": "assets/products/documents/Палоцид/instructions/Палоцид инструкция.docx"
         },
         {
           "id": 2,
@@ -493,14 +463,12 @@
       "title": null,
       "img": "assets/products/images/Палоцид.jpg",
       "price": 1600,
-      "category": [
-        "veterinary"
-      ],
+      "category": ["veterinary"],
       "documents": [
         {
           "id": 1,
-          "name": "ПАЛОЦИД инструкция",
-          "documentLink": "assets/products/documents/Палоцид/instructions/ПАЛОЦИД инструкция.docx"
+          "name": "Палоцид инструкция",
+          "documentLink": "assets/products/documents/Палоцид/instructions/Палоцид инструкция.docx"
         },
         {
           "id": 2,
@@ -516,10 +484,7 @@
       "title": null,
       "img": "assets/products/images/НЕО-К.jpg",
       "price": 1600,
-      "category": [
-        "foodIndustry",
-        "life"
-      ],
+      "category": ["foodIndustry", "life"],
       "documents": [
         {
           "id": 1,
@@ -540,10 +505,7 @@
       "title": null,
       "img": "assets/products/images/НЕО-Щ.jpg",
       "price": 1600,
-      "category": [
-        "foodIndustry",
-        "life"
-      ],
+      "category": ["foodIndustry", "life"],
       "documents": [
         {
           "id": 1,
@@ -564,9 +526,7 @@
       "title": null,
       "img": "assets/products/images/Антисептик ПАЛ-1 0.3.jpg",
       "price": 220,
-      "category": [
-        "antiseptic"
-      ],
+      "category": ["antiseptic"],
       "documents": [
         {
           "id": 1,
@@ -587,9 +547,7 @@
       "title": null,
       "img": "assets/products/images/ЧистыеДиски.jpg",
       "price": 1600,
-      "category": [
-        "life"
-      ],
+      "category": ["life"],
       "documents": [],
       "linksAltair": null
     }

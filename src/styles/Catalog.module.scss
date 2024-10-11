@@ -1,4 +1,4 @@
-@import './Variables.scss';
+@import "./Variables.scss";
 
 .wrapper {
   display: flex;
@@ -10,38 +10,26 @@
   display: flex;
   flex-direction: column;
   gap: 60px;
-  padding: calc($index * 2);
-  border-radius: calc($index * 2);
-  box-shadow: inset 0 0 10px rgba(black, .25);
-  h1 {
+}
+.categories__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: calc($index * 2);
+  h2 {
     color: $primary-color;
     text-align: center;
-    font-size: calc($index * 1.5);
   }
 }
 .categories {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   border-bottom: 1px solid $titan-color;
   padding-bottom: $index;
-}
-.categories__button {
-  padding: calc($index * .5) $index;
-  border-radius: calc($index * 2);
-  border: 1px solid transparent;
-  font-size: 16px;
-  font-weight: 500;
-  transition: $transition ease;
-  &:hover {
-    border-color: $primary-color;
-    color: $primary-color;
-  }
-  &:active {
-    color: white;
-    background-color: $primary-color;
+  button {
+    text-align: start;
   }
 }
-.activeBtn {}
 .products {
   position: relative;
   display: grid;
@@ -54,5 +42,52 @@
 @media (width > 1600px) {
   .wrapper {
     padding-inline: calc($index * 6);
+  }
+}
+@media (width < 1330px) {
+  .wrapper {
+    padding-inline: calc($index * 1.5);
+  }
+  .container {
+    box-shadow: none;
+    flex-direction: row;
+    padding: 0;
+  }
+  .categories__wrapper h2 {
+    text-align: start;
+    color: $primary-color;
+  }
+  .categories {
+    flex-direction: column;
+    justify-content: start;
+    button {
+      text-align: start;
+    }
+  }
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (width < 1200px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    margin-inline: auto;
+  }
+}
+@media (width < 864px) {
+  .wrapper {
+    padding-inline: $index;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .categories {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (width < 560px) {
+  .products {
+    grid-template-columns: 1fr;
   }
 }

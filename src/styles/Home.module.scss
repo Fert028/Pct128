@@ -1,22 +1,23 @@
-@import './Variables.scss';
+@import "./Variables.scss";
 
 .container {
   display: flex;
   flex-direction: column;
 }
-.home__title {
+.title {
   display: flex;
   align-items: center;
 }
-.heroTitle__container {
+.hero__container {
   max-width: 35svw;
   margin-inline: auto;
-  .heroTitle {
+  .hero {
     font-size: calc($index * 2.3);
     color: $primary-color;
     font-weight: 600;
     span {
-      font-weight: 500;
+      font-weight: 300;
+      color: $text-color;
     }
   }
   p {
@@ -24,27 +25,68 @@
     color: $text-color;
   }
 }
-.imageTitle {
+.title__image {
   width: 40svw;
-  border-radius: $index;
-  box-shadow: 0 8px 16px rgba(black, .5);
+  border-radius: calc($index * 1.5);
+  box-shadow: 0 8px 16px rgba(black, 0.5);
+  image-rendering: pixelated;
 }
-.home__products {
-  box-shadow: inset 0 0 10px rgba(black, .25);
+.products {
+  box-shadow: inset 0 0 10px rgba(black, 0.25);
   border-radius: calc($index * 2);
   padding: calc($index * 2);
   display: flex;
   flex-direction: column;
-  gap: calc($index * 3);
-  .home__productsTitle {
+  gap: calc($index * 2);
+  h1 {
     text-align: center;
   }
 }
-.home__productsItems {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  justify-items: center;
+.products__container {
+  display: flex;
+  justify-content: space-around;
+}
+.openAllProducts {
+  max-width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: $transition linear;
+  span {
+    width: 11px;
+    height: 11px;
+    border: 1px solid transparent;
+    border-right-color: $text-color;
+    border-bottom-color: $text-color;
+    transform: rotate(-45deg);
+    transition: inherit;
+  }
+  @media (hover: hover) {
+    &:hover {
+      color: $primary-color;
+      span {
+        border-right-color: $primary-color;
+        border-bottom-color: $primary-color;
+      }
+    }
+    &:active {
+      color: $yellow;
+      span {
+        border-right-color: $yellow;
+        border-bottom-color: $yellow;
+      }
+    }
+  }
+  @media (hover: none) {
+    &:active {
+      color: $primary-color;
+      span {
+        border-right-color: $primary-color;
+        border-bottom-color: $primary-color;
+      }
+    }
+  }
 }
 .advantages {
   display: flex;
@@ -57,15 +99,19 @@
 .advantages__container {
   display: flex;
   justify-content: space-around;
-  .advantages__container__item {
-    display: flex;
-    flex-direction: column;
-    gap: 8rem;
-    article {
-      max-width: 24svw;
-      h2 {
-        margin-bottom: 1.5rem;
-      }
+}
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  article {
+    width: 360px;
+    padding: $index;
+    border: 1px solid $titan-color;
+    border-radius: $index;
+    box-shadow: 0 5px 10px rgba(black, 0.25);
+    h2 {
+      margin-bottom: 1.5rem;
     }
   }
 }
@@ -80,32 +126,66 @@
     width: calc($index * 8);
   }
 }
-.animationText {
-  color: rgba($titan-color, .4);
-  position: relative;
-  overflow: hidden;
-  width: min-content;
-}
-.animationText::before {
-  content: attr(data-line);
-  color: $text-color;
-  position: absolute;
-  overflow: hidden;
-  width: 0; height: 100%;
-  animation: print 5s linear infinite;
-  animation-delay: 1s;
-}
-@keyframes print {
-  0%, 10%, 100% {
-    width: 0;
-  }
-  70%, 90% {
-    width: 100%;
-  }
-}
 
 @media (width > 1600px) {
   .container section {
     padding-inline: calc($index * 6);
+  }
+}
+@media (width < 1024px) {
+  .products {
+    align-items: center;
+  }
+  .products__container {
+    flex-direction: column;
+    gap: calc($index * 2);
+    padding: $index;
+  }
+}
+@media (width < 950px) {
+  .logo__container {
+    display: none;
+  }
+  .advantages__container {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .advantages__item {
+    gap: 60px;
+    article:nth-child(2) {
+      margin-left: auto;
+    }
+  }
+}
+@media (width < 700px) {
+  .title {
+    flex-direction: column;
+    gap: calc($index * 2);
+  }
+  .hero__container {
+    max-width: 80svw;
+  }
+  .title__image {
+    width: 85svw;
+    aspect-ratio: 19 / 9;
+    object-fit: cover;
+    object-position: center;
+  }
+  .products {
+    box-shadow: none;
+    .products__container {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      gap: calc($index * 2);
+    }
+  }
+  .logo__container {
+    display: none;
+  }
+}
+@media (width < 450px) {
+  .advantages__item article {
+    width: 100%;
+    margin: 0;
   }
 }

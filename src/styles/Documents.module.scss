@@ -17,15 +17,17 @@
     margin-bottom: 60px;
   }
 }
-.patentsContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-}
-.awardsContainer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
+.patentsContainer, .awardsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  li {
+    display: block;
+    a {
+      width: min-content;
+      height: min-content;
+    }
+  }
 }
 .imgDocs {
   width: calc($index * 12);
@@ -53,4 +55,25 @@
   padding: calc($index * 2);
   border-radius: calc($index * 2);
   box-shadow: inset 0 0 10px rgba(black, .25);
+}
+
+@media (width < 1200px) {
+  .container {
+    padding: 0;
+  }
+}
+@media (width < 900px) {
+  .wrapper {
+    padding: calc($index * 2);
+  }
+  .patentsContainer, .awardsContainer {
+    width: 80svw;
+    gap: 30px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    li {
+      scroll-snap-align: center;
+    }
+  }
 }

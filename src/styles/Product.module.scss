@@ -22,17 +22,15 @@
   gap: $index;
 } 
 .orderButton {
+  color: white;
+  font-size: calc($index * .9);
+  background-color: $primary-color;
   border-radius: calc($index * 2);
-  padding-inline: 0;
-  .orderButton__link {
-    color: white;
-    font-size: calc($index * .9);
-    background-color: $primary-color;
-    border-radius: calc($index * 2);
-    border: 1px solid $primary-color;
-    padding: calc($index * .5) calc($index * 5);
-    box-shadow: 0 5px 10px rgba(black, .25);
-    transition: $transition linear;
+  border: 1px solid $primary-color;
+  padding: calc($index * .5) calc($index * 5);
+  box-shadow: 0 5px 10px rgba(black, .25);
+  transition: $transition linear;
+  @media (hover: hover) {
     &:hover {
       background-color: transparent;
       color: $primary-color;
@@ -43,13 +41,11 @@
       border-color: $yellow;
     }
   }
-  &:disabled {
-    pointer-events: none;
-    opacity: .8;
-    .orderButton__link {
-      background-color: $titan-color;
-      border-color: $text-color;
-      color: $text-color;
+  @media (hover: none) {
+    &:active {
+      background-color: transparent;
+      color: $primary-color;
+      box-shadow: none;
     }
   }
 }

@@ -3,6 +3,7 @@ import style from "../styles/ProductCard.module.scss";
 import data from "../data/products.json";
 import { useState, useEffect } from "react";
 import classNames from "classnames";
+import arrowDown from "../assets/img/icons/arrow-down.svg";
 
 export default function ProductCard(props) {
   const [product, setProduct] = useState({});
@@ -16,7 +17,7 @@ export default function ProductCard(props) {
 
   return (
     <NavLink
-      to={`/catalog/product/${product.id}`}
+      to={`/product/${product.id}`}
       className={style.card}
       title={`Перейти к ${product.name}`}
     >
@@ -28,6 +29,7 @@ export default function ProductCard(props) {
           <h4>{product.name}</h4>
           <p>{product.price}р.</p>
           <p className={classNames(style.goText, "text")}>Перейти к товару</p>
+          <img className={style.arrowDown} src={arrowDown} alt="" />
         </div>
       </div>
     </NavLink>
