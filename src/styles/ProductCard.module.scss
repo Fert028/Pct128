@@ -1,6 +1,6 @@
 @import "./Variables.scss";
 
-$card-width: clamp(222px, 256px, 268px);
+$card-width: 256px;
 $b-radius: 20px;
 
 .card {
@@ -58,8 +58,36 @@ $b-radius: 20px;
   width: 18px;
 }
 
-@media (width < 700px) {
+@media (width < 940px) {
+  $card-width: 200px;
+  .card {
+    width: $card-width;
+  }
+  .img__container img {
+    width: $card-width;
+  }
   .goText {
     display: none;
+  }
+}
+@media (width < 440px) {
+  $card-width: 156px;
+  $b-radius: 10px;
+
+  .card {
+    width: $card-width;
+    aspect-ratio: 3 / 4;
+    border-radius: $b-radius;
+  }
+  .product__title {
+    padding: 6px;
+    h4 {
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+  .img__container img {
+    width: $card-width;
+    border-radius: $b-radius;
   }
 }

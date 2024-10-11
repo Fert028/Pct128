@@ -85,8 +85,17 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-@media (width < 560px) {
+@media (width < 680px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $index;
+  }
+}
+@media (width < 340px) {
   .products {
     grid-template-columns: 1fr;
   }

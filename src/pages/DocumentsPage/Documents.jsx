@@ -15,6 +15,7 @@ export default function Documents(props) {
     <div className={style.wrapper}>
       <h1 className="title">Документы</h1>
       <div className={style.container}>
+        
         <section className={style.sectionDocs}>
           <h2>Патенты</h2>
           <div>

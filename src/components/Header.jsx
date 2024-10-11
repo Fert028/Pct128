@@ -5,9 +5,6 @@ import { useState } from "react";
 export default function Header() {
   const [open, setOpen] = useState();
 
-  if (open) {
-    document.body.style.overflow = "hidden";
-  }
   const pageMenu = (
     <div className="pageMenu__wrapper">
       <nav className={open ? "pagesMenu pagesMenuActive" : "pagesMenu"}>

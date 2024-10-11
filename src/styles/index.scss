@@ -104,7 +104,6 @@ h3 {
   font-family: "Montserrat", sans-serif;
 }
 p {
-  // font-family: 'Ubuntu';
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
@@ -269,7 +268,6 @@ section {
     color: $primary-color;
   }
 }
-
 @media (width > 1600px) {
   button {
     padding: calc($index * 0.3) calc($index * 0.6);
@@ -301,7 +299,10 @@ section {
     }
   }
 }
-@media (width < 900px) {
+@media (width < 940px) {
+  section {
+    padding: calc($index * 2);
+  }
   .burger {
     display: block;
   }
@@ -334,5 +335,10 @@ section {
   .footer__content {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+@media (hover: none) {
+  .button, a {
+    transition: none;
   }
 }

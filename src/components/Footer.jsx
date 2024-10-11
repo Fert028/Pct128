@@ -10,7 +10,7 @@ export default function Footer() {
           </a>
           <p>Безопасность ваша и ваших близких</p>
         </div>
-        <a href="https://github.com/Fert028" target="_blank" className="copyraght">&copy;Fert028 2024</a>
+        <a href="https://github.com/Fert028" target="_blank" className="copyraght">&copy;Nikon_Vir 2024</a>
       </div>
     </footer>
   );

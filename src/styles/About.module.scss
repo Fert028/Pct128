@@ -43,7 +43,12 @@
   padding: calc($index * 3);
   display: flex;
   justify-content: space-between;
+  gap: 60px;
   color: $basic-color;
+  text-wrap: balance;
+  article {
+    width: 200px;
+  }
   h2 {
     color: $yellow;
   }
@@ -69,6 +74,9 @@
 }
 
 @media (width < 940px) {
+  .container {
+    padding: calc($index * 2);
+  }
   .content1 {
     flex-direction: column;
     gap: 60px;
@@ -77,7 +85,6 @@
   }
   .content2 {
     flex-direction: column;
-    gap: 60px;
   }
   .historyCreations {
     grid-template-columns: repeat(2, 1fr);
@@ -86,9 +93,6 @@
   }
 }
 @media (width < 700px) {
-  .container {
-    padding: $index;
-  }
   .title {
     padding-inline: 0;
     width: 100%;

@@ -58,7 +58,7 @@
     padding-inline: calc($index * 6);
   }
 }
-@media (width < 900px) {
+@media (width < 940px) {
   .container {
     gap: 80px;
     padding: calc($index * 2);
