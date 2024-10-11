@@ -259,7 +259,7 @@ section {
   text-shadow: 0 3px 6px rgba(black, 0.25);
 }
 .text {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: rgba($text-color, 0.55);
 }
@@ -283,6 +283,11 @@ section {
     ul {
       gap: calc($index * 1);
     }
+  }
+}
+@media (width > 1600px) {
+  .text {
+    font-size: 16px;
   }
 }
 @media (width < 1280px) {

@@ -34,43 +34,53 @@ export default function Product() {
   return (
     <div className={style.wrapper}>
       <div className={style.container}>
+
         <div className={style.contentProduct}>
           <div className={style.title}>
             <h1>"{item.name}"</h1>
             {notOrder}
             <form action={item.linksAltair} target="_blank">
-              <button className={style.orderButton} disabled={disabled}>Заказать</button>
+              <button className={classNames("button", style.orderButton)} disabled={disabled}>
+                Заказать
+              </button>
             </form>
             {price}
           </div>
 
-          <div className={style.subTitle}></div>
-
-          <div className={classNames(style.docsLi, "docsList")}>
-            <h3>Документы:</h3>
-            <ul>
-              {item.documents.map((el) => (
-                <li>
-                  <a
-                    className={style.linkToDocs}
-                    href={`../../${el.documentLink}`}
-                    key={el.id}
-                    target="blank"
-                  >
-                    {el.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-        <div>
           <img
             className={style.imageProduct}
             src={`../../${item.img}`}
             alt={`Не удалось загрузить изображение ${item.name}`}
           />
+
+          {/* <div className={style.subTitle}></div> */}
         </div>
+        <div className={classNames(style.docsLi, "docsList")}>
+          <h3>Документы:</h3>
+          <ul>
+            {item.documents.map((el) => (
+              <li>
+                <a
+                  className={style.linkToDocs}
+                  href={`../../${el.documentLink}`}
+                  key={el.id}
+                  target="blank"
+                >
+                  {el.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* <div>
+          <img
+            className={style.imageProduct}
+            src={`../../${item.img}`}
+            alt={`Не удалось загрузить изображение ${item.name}`}
+          />
+        </div> */}
+
       </div>
     </div>
   );

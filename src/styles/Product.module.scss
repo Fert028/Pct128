@@ -9,21 +9,24 @@
 .container {
   display: flex;
   justify-content: space-between;
-  padding: $index;
+  flex-direction: column;
+  gap: 60px;
 }
 .contentProduct {
   display: flex;
-  flex-direction: column;
-  gap: calc($index * 2);
+  justify-content: space-around;
+  gap: 60px;
 }
 .title {
-  display: grid;
-  justify-items: center;
-  gap: $index;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 } 
 .orderButton {
+  position: relative;
   color: white;
-  font-size: calc($index * .9);
+  font-size: 18px;
   background-color: $primary-color;
   border-radius: calc($index * 2);
   border: 1px solid $primary-color;
@@ -53,6 +56,7 @@
   color: $red;
 }
 .docsLi {
+  width: fit-content;
   display: flex;
   flex-direction: column;
   gap: $index;
@@ -66,4 +70,21 @@
   object-fit: cover;
   border-radius: $index;
   box-shadow: 0 8px 16px rgba(black, .25);
+}
+
+@media (width < 900px) {
+  .wrapper {
+    padding: calc($index * 2);
+  }
+}
+@media (width < 680px) {
+  .contentProduct {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (width < 350px) {
+  .title h1 {
+    font-size: calc($index * 2.4);
+  }
 }
