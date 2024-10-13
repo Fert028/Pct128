@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 export default function Home(props) {
   document.title = props.title;
   return (
-    <div className={style.container}>
+    <div className="container">
       <section>
         <div className={style.title}>
           <article className={style.hero__container}>
@@ -21,13 +21,22 @@ export default function Home(props) {
         </div>
       </section>
 
-      <section>
-        <div className={style.products}>
+      <section className={style.sectionProducts}>
+        <div className="slider__wrapper">
           <h1>Топ товаров</h1>
-          <div className={style.products__container}>
-            <ProductCard productId={1} />
-            <ProductCard productId={8} />
-            <ProductCard productId={15} />
+          <div className="slider">
+            <ul className="slider__slideContainer">
+              <li className="slide"><ProductCard productId={15} /></li>
+              <li className="slide"><ProductCard productId={1} /></li>
+              <li className="slide"><ProductCard productId={2} /></li>
+              <li className="slide"><ProductCard productId={3} /></li>
+              <li className="slide"><ProductCard productId={4} /></li>
+              <li className="slide"><ProductCard productId={8} /></li>
+              <li className="slide"><ProductCard productId={9} /></li>
+              <li className="slide"><ProductCard productId={10} /></li>
+              <li className="slide"><ProductCard productId={11} /></li>
+              <li className="slide"><ProductCard productId={12} /></li>
+            </ul>
           </div>
           <div>
             <NavLink to="/catalog" className={style.openAllProducts}>

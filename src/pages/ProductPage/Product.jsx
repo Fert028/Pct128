@@ -73,14 +73,6 @@ export default function Product() {
           </ul>
         </div>
 
-        {/* <div>
-          <img
-            className={style.imageProduct}
-            src={`../../${item.img}`}
-            alt={`Не удалось загрузить изображение ${item.name}`}
-          />
-        </div> */}
-
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ export default function ProductCard(props) {
           <h4>{product.name}</h4>
           <p>{product.price}р.</p>
           <p className={classNames(style.goText, "text")}>Перейти к товару</p>
-          <img className={style.arrowDown} src={arrowDown} alt="" />
+          <img className={style.arrowDown} src={arrowDown} alt={product.name} loading="lazy" />
         </div>
       </div>
     </NavLink>

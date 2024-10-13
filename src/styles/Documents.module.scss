@@ -1,21 +1,16 @@
 @import './Variables.scss';
 
 .wrapper {
-  padding: calc($index * 3);
-  h1, h2 {
+  h1 {
+    margin-bottom: 80px;
     text-align: center;
   }
 }
-.container {
-  margin-top: 100px;
-  padding-inline: calc($index * 3);
-  display: grid;
-  gap: 100px;
+.documents__slider {
+  padding-inline: calc($index * 2);
 }
-.sectionDocs {
-  h2 {
-    margin-bottom: 60px;
-  }
+.documents__slideContainer {
+  justify-content: space-between;
 }
 .patentsContainer, .awardsContainer {
   display: flex;
@@ -64,20 +59,14 @@
   }
 }
 @media (width < 900px) {
-  .wrapper {
-    padding: calc($index * 2);
-  }
-  .container {
-    gap: 60px;
-  }
   .patentsContainer, .awardsContainer {
     gap: 30px;
   }
+  .documents__slider {
+    padding-inline: 0;
+  }
 }
 @media (width < 480px) {
-  .container {
-    gap: 30px;
-  }
   .sectionDocs h2 {
     margin-bottom: 30px;
   }

@@ -1,13 +1,7 @@
 @import './Variables.scss';
 
-.container {
-  padding: calc($index * 3) calc($index * 4);
-  display: flex;
-  flex-direction: column;
-  gap: calc($index * 4);
-  p {
-    text-wrap: balance;
-  }
+.container p {
+  text-wrap: balance;
 }
 .title {
   text-align: center;

@@ -9,7 +9,7 @@ import iconLocation from "../../assets/img/icons/location.svg";
 export default function Contacts(props) {
   document.title = props.title;
   return (
-    <div className={style.container}>
+    <div className="container">
       <h1 className="title">Контакты</h1>
 
       <section>

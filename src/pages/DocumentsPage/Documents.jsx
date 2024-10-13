@@ -1,6 +1,7 @@
 import style from "../../styles/Documents.module.scss";
 import data from "../../data/products.json";
 import downloadIcon from "../../assets/img/icons/download_icon.svg";
+import classNames from "classnames";
 
 export default function Documents(props) {
   document.title = props.title;
@@ -14,43 +15,47 @@ export default function Documents(props) {
   return (
     <div className={style.wrapper}>
       <h1 className="title">Документы</h1>
-      <div className={style.container}>
+      <div className="container">
         
-        <section className={style.sectionDocs}>
-          <h2>Патенты</h2>
-          <div>
-            <ul className={style.patentsContainer}>
-              {patents.map((el) => (
-                <li key={el.id}>
-                  <a href={`../../${el.documentLink}`} target="blank">
-                    <img
-                      className={style.imgDocs}
-                      src={`../../${el.documentLink}`}
-                      alt=""
-                    />
-                  </a>
-                </li>
-              ))}
-            </ul>
+        <section>
+          <div className="slider__wrapper">
+            <h2>Патенты</h2>
+            <div className={classNames(style.documents__slider, "slider")}>
+              <ul className={classNames(style.documents__slideContainer, "slider__slideContainer")}>
+                {patents.map((el) => (
+                  <li key={el.id} className="slide">
+                    <a href={`../../${el.documentLink}`} target="blank">
+                      <img
+                        className={style.imgDocs}
+                        src={`../../${el.documentLink}`}
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </section>
 
-        <section className={style.sectionDocs}>
-          <h2>Награды</h2>
-          <div>
-            <ul className={style.awardsContainer}>
-              {awards.map((el) => (
-                <li key={el.id}>
-                  <a href={`../../${el.documentLink}`} target="blank">
-                    <img
-                      className={style.imgDocs}
-                      src={`../../${el.documentLink}`}
-                      alt=""
-                    />
-                  </a>
-                </li>
-              ))}
-            </ul>
+        <section>
+          <div className="slider__wrapper">
+            <h2>Награды</h2>
+            <div className={classNames(style.documents__slider, "slider")}>
+              <ul className={classNames(style.documents__slideContainer, "slider__slideContainer")}>
+                {awards.map((el) => (
+                  <li key={el.id} className="slide">
+                    <a href={`../../${el.documentLink}`} target="blank">
+                      <img
+                        className={style.imgDocs}
+                        src={`../../${el.documentLink}`}
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </section>
 

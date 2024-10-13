@@ -1,10 +1,11 @@
 import style from "../../styles/About.module.scss";
+import classNames from "classnames";
 
 export default function About(props) {
   document.title = props.title;
 
   return (
-    <div className={style.container}>
+    <div className={classNames(style.container, "container")}>
       <div className={style.title}>
         <h1 className="title">О нас</h1>
         <br />
@@ -13,7 +14,7 @@ export default function About(props) {
           водоподготовки, <br /> экологии и производственного инжиниринга
         </p>
       </div>
-      <section className={style.content1__container}>
+      <section className={classNames(style.content1__container, "section")}>
         <h2>ГК «ПХТ»</h2>
         <div className={style.content1}>
           <article>
@@ -49,7 +50,7 @@ export default function About(props) {
           этих решений и рецептур препаратов защищены патентами РФ.
         </p>
       </section>
-      <section className={style.content2}>
+      <section className={classNames(style.content2, "section")}>
         <articre>
           <h2>#1</h2>
           <br />
@@ -78,7 +79,7 @@ export default function About(props) {
           </p>
         </articre>
       </section>
-      <section className={style.historyCreations__container}>
+      <section className={classNames(style.historyCreations__container, "section")}>
         <h2>История создания</h2>
         <div className={style.historyCreations}>
           <article>

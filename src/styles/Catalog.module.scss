@@ -4,12 +4,6 @@
   display: flex;
   flex-direction: column;
   gap: calc($index * 4);
-  padding: calc($index * 3);
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
 }
 .categories__wrapper {
   display: flex;
@@ -21,14 +15,8 @@
   }
 }
 .categories {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
   border-bottom: 1px solid $titan-color;
   padding-bottom: $index;
-  button {
-    text-align: start;
-  }
 }
 .products {
   position: relative;
@@ -45,24 +33,9 @@
   }
 }
 @media (width < 1330px) {
-  .wrapper {
-    padding-inline: calc($index * 1.5);
-  }
-  .container {
-    box-shadow: none;
-    flex-direction: row;
-    padding: 0;
-  }
   .categories__wrapper h2 {
     text-align: start;
     color: $primary-color;
-  }
-  .categories {
-    flex-direction: column;
-    justify-content: start;
-    button {
-      text-align: start;
-    }
   }
   .products {
     grid-template-columns: repeat(3, 1fr);
@@ -70,23 +43,13 @@
 }
 @media (width < 1200px) {
   .products {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-inline: auto;
   }
 }
-@media (width < 864px) {
-  .wrapper {
-    padding-inline: $index;
-  }
-  .container {
-    flex-direction: column;
-  }
-  .categories {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+@media (width < 780px) {
   .products {
-    grid-template-columns: repeat(3, 1fr);
+    gap: $index;
   }
 }
 @media (width < 680px) {
