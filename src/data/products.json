@@ -1,30 +1,32 @@
 {
   "categories": [
     {
-      "key": "all",
-      "name": "Все"
-    },
-    {
+      "id": 1,
       "key": "medicine",
       "name": "Медицина"
     },
     {
+      "id": 2,
       "key": "foodIndustry",
       "name": "Пищевая промышленность"
     },
     {
+      "id": 3,
       "key": "veterinary",
       "name": "Ветеринария"
     },
     {
+      "id": 4,
       "key": "birdProcessing",
       "name": "Птицепереработка"
     },
     {
+      "id": 5,
       "key": "life",
       "name": "Быт"
     },
     {
+      "id": 6,
       "key": "antiseptic",
       "name": "Антисептики"
     }

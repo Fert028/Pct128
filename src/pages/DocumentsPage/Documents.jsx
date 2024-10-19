@@ -1,10 +1,10 @@
-import style from "../../styles/Documents.module.scss";
+import style from "./Documents.module.scss";
 import data from "../../data/products.json";
 import downloadIcon from "../../assets/img/icons/download_icon.svg";
 import classNames from "classnames";
 
-export default function Documents(props) {
-  document.title = props.title;
+export default function Documents() {
+  document.title = "ПХТ - Документы";
 
   const patents = data.documents.patents;
   const awards = data.documents.awards;

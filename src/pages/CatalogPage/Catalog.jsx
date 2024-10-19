@@ -1,56 +1,30 @@
-import { useEffect, useState } from "react";
-import style from "../../styles/Catalog.module.scss";
+import style from "./Catalog.module.scss";
 import data from "../../data/products.json";
-import ProductCard from "../../components/ProductCard";
-import classNames from "classnames";
+import ProductCard from "../../components/ProductCard/ProductCard";
 
-export default function Catalog(props) {
-  document.title = props.title;
+export default function Catalog() {
+  document.title = "ПХТ - Каталог";
 
-  const [items, setItems] = useState(data.items);
-  const [category, setCategory] = useState("all");
-  const [categoryText, setCategoryText] = useState("Все");
-  // const [activeButton, setActiveButton] = useState("all")
-
-  useEffect(() => {
-    const filteredItems = [...data.items].filter((item) =>
-      item.category?.find(i => i === category),
-    );
-    if (category === "all") {
-      setItems(data.items);
-    } else {
-      setItems(filteredItems);
-    }
-    const categoryTitle = data.categories.find((item) => item.key === category);
-    setCategoryText(categoryTitle.name);
-  }, [category, categoryText]);
+  console.log(data.categories, data.items);
 
   return (
     <div className={style.wrapper}>
       <h1 className="title">Каталог</h1>
       <div className="container">
-        <div className={style.categories__wrapper}>
-          <div className={classNames(style.categories, "slider")}>
-            <div className="slider__slideContainer">
-              {data.categories.map((el) => (
-                <li className="slide" key={el.key}>
-                  <button
-                    onClick={() => setCategory(el.key)}
-                    className="button"
-                  >
-                    {el.name}
-                  </button>
-                </li>
-              ))}
+        {data.categories.map(category => (
+          <section key={category.id} className="slider__wrapper">
+            <h1>{category.name}</h1>
+            <div className="slider">
+              <ul className="slider__slideContainer">
+                {data.items.filter(item => item.category?.find(i => i === category.key)).map(el => (
+                  <li key={el.id} className="slider__slide">
+                    <ProductCard productId={el.id} />
+                  </li>
+                ))}
+              </ul>
             </div>
-          </div>
-          <h2>{categoryText}</h2>
-        </div>
-        <div className={style.products}>
-          {items.map((el) => (
-            <ProductCard key={el.id} item={el} productId={el.id} />
-          ))}
-        </div>
+          </section>
+        ))}
       </div>
     </div>
   );

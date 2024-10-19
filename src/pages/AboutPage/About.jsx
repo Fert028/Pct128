@@ -1,8 +1,8 @@
-import style from "../../styles/About.module.scss";
+import style from "./About.module.scss";
 import classNames from "classnames";
 
-export default function About(props) {
-  document.title = props.title;
+export default function About() {
+  document.title = "ПХТ - О нас";
 
   return (
     <div className={classNames(style.container, "container")}>

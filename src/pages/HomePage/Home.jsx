@@ -1,11 +1,14 @@
-import style from "../../styles/Home.module.scss";
+import style from "./Home.module.scss";
 import imageHim from "../../assets/img/images/him.jpg";
 import logo from "../../assets/img/logo/logoПХТ128.svg";
-import ProductCard from "../../components/ProductCard";
+import ProductCard from "../../components/ProductCard/ProductCard";
 import { NavLink } from "react-router-dom";
 
-export default function Home(props) {
-  document.title = props.title;
+export default function Home() {
+  document.title = "ПХТ";
+
+  const elementsId = [15, 1, 2, 3, 4, 8, 9, 10, 11, 12];
+
   return (
     <div className="container">
       <section>
@@ -21,21 +24,16 @@ export default function Home(props) {
         </div>
       </section>
 
-      <section className={style.sectionProducts}>
+      <section>
         <div className="slider__wrapper">
           <h1>Топ товаров</h1>
           <div className="slider">
             <ul className="slider__slideContainer">
-              <li className="slide"><ProductCard productId={15} /></li>
-              <li className="slide"><ProductCard productId={1} /></li>
-              <li className="slide"><ProductCard productId={2} /></li>
-              <li className="slide"><ProductCard productId={3} /></li>
-              <li className="slide"><ProductCard productId={4} /></li>
-              <li className="slide"><ProductCard productId={8} /></li>
-              <li className="slide"><ProductCard productId={9} /></li>
-              <li className="slide"><ProductCard productId={10} /></li>
-              <li className="slide"><ProductCard productId={11} /></li>
-              <li className="slide"><ProductCard productId={12} /></li>
+              {elementsId.map(el => (
+                <li key={el} className="slider__slide">
+                  <ProductCard productId={el} />
+                </li>
+              ))}
             </ul>
           </div>
           <div>

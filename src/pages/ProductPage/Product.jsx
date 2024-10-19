@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import style from "../../styles/Product.module.scss";
+import style from "./Product.module.scss";
 import data from "../../data/products.json";
 import classNames from "classnames";
 

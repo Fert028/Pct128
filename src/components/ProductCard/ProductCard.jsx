@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
-import style from "../styles/ProductCard.module.scss";
-import data from "../data/products.json";
+import style from "./ProductCard.module.scss";
+import data from "../../data/products.json";
 import { useState, useEffect } from "react";
 import classNames from "classnames";
-import arrowDown from "../assets/img/icons/arrow-down.svg";
+import arrowDown from "../../assets/img/icons/arrow-down.svg";
 
 export default function ProductCard(props) {
   const [product, setProduct] = useState({});

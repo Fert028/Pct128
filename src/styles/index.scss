@@ -296,7 +296,7 @@ main {
   gap: $index;
   padding: $index;
 }
-.slide {
+.slider__slide {
   width: min-content;
   height: min-content;
 }
@@ -370,20 +370,24 @@ main {
   }
 }
 @media (width < 780px) {
+  .container {
+    padding: $index;
+  }
   .slider__wrapper {
     box-shadow: none;
     padding: 0 0 40px 0;
     border-radius: 0;
     border-bottom: 1px solid $text-color;
   }
-}
-@media (width < 440px) {
-  .container {
-    padding: $index;
+  .slider {
+    padding: 0;
+    width: calc(100svw - ($index * 2));
   }
   .slider__slideContainer {
     width: calc(100svw - ($index * 2));
   }
+}
+@media (width < 440px) {
   .footer__content {
     flex-direction: column;
     align-items: flex-start;

@@ -1,0 +1,8 @@
+@import '../../styles/Variables.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: calc($index * 4);
+}
+

@@ -8,22 +8,19 @@ import Contacts from "./pages/ContactsPage/Contacts";
 import Documents from "./pages/DocumentsPage/Documents";
 import Product from "./pages/ProductPage/Product";
 
-function App() {
+export default function App() {
   return (
     <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home title={"ПХТ"} />} />
-          <Route path="/about" element={<About title={"ПХТ - О нас"} />} />
-          <Route path="/catalog" element={<Catalog title={"ПХТ - Каталог"} />} />
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/catalog" element={<Catalog />} />
           <Route path="/product/:id" element={<Product />} />
-          <Route path="/contacts" element={<Contacts title={"ПХТ - Контакты"} />} />
-          <Route path="/documents" element={<Documents title={"ПХТ - Документы"} />} />
-          <Route path="*" element={<Home title={"ПХТ"} />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/documents" element={<Documents />} />
         </Route>
       </Routes>
     </HashRouter>
   );
 }
-
-export default App;
