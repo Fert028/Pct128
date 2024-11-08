@@ -5,8 +5,6 @@ import ProductCard from "../../components/ProductCard/ProductCard";
 export default function Catalog() {
   document.title = "ПХТ - Каталог";
 
-  console.log(data.categories, data.items);
-
   return (
     <div className={style.wrapper}>
       <h1 className="title">Каталог</h1>
@@ -15,7 +13,7 @@ export default function Catalog() {
           <section key={category.id} className="slider__wrapper">
             <h1>{category.name}</h1>
             <div className="slider">
-              <ul className="slider__slideContainer">
+              <ul className="slider__container">
                 {data.items.filter(item => item.category?.find(i => i === category.key)).map(el => (
                   <li key={el.id} className="slider__slide">
                     <ProductCard productId={el.id} />

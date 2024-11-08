@@ -21,9 +21,9 @@ export default function Documents() {
           <div className="slider__wrapper">
             <h2>Патенты</h2>
             <div className={classNames(style.documents__slider, "slider")}>
-              <ul className={classNames(style.documents__slideContainer, "slider__slideContainer")}>
+              <ul className={classNames(style.documents__slideContainer, "slider__container")}>
                 {patents.map((el) => (
-                  <li key={el.id} className="slide">
+                  <li key={el.id} className="slider__slide">
                     <a href={`../../${el.documentLink}`} target="blank">
                       <img
                         className={style.imgDocs}
@@ -42,9 +42,9 @@ export default function Documents() {
           <div className="slider__wrapper">
             <h2>Награды</h2>
             <div className={classNames(style.documents__slider, "slider")}>
-              <ul className={classNames(style.documents__slideContainer, "slider__slideContainer")}>
+              <ul className={classNames(style.documents__slideContainer, "slider__container")}>
                 {awards.map((el) => (
-                  <li key={el.id} className="slide">
+                  <li key={el.id} className="slider__slide">
                     <a href={`../../${el.documentLink}`} target="blank">
                       <img
                         className={style.imgDocs}
@@ -66,8 +66,9 @@ export default function Documents() {
               {instructions.map((el) => (
                 <li key={el.id} className={style.docsLinks}>
                   <a
-                    download={`../../${el.documentLink}`}
+                    href={`../../${el.documentLink}`}
                     title="Скачать этот файл"
+                    download
                   >
                     <img
                       className={style.downloadIcon}

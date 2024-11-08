@@ -291,7 +291,8 @@ main {
   width: calc(100svw - ($index * 6));
   overflow-x: scroll;
 }
-.slider__slideContainer {
+.slider__container {
+  width: max-content;
   display: flex;
   gap: $index;
   padding: $index;

@@ -28,7 +28,7 @@ export default function Home() {
         <div className="slider__wrapper">
           <h1>Топ товаров</h1>
           <div className="slider">
-            <ul className="slider__slideContainer">
+            <ul className="slider__container">
               {elementsId.map(el => (
                 <li key={el} className="slider__slide">
                   <ProductCard productId={el} />
